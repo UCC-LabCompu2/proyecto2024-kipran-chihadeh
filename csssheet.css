@@ -1,14 +1,33 @@
 
-
-.titulo{
-    font-size: 500px;
+h1{
+    margin:-10px 10px ;
+    font-size: 70px;
 }
 b{
     word-spacing: 20px;
-    font-size: 20px;
+    font-size: 15px;
     float: right;
+    margin: -250px -90px;
 }
 nav{
-    font-family: arial, helvetica, sans-serif;
-    color : #fff;
+    ul{
+        margin: 150px -10px;
+        input{
+            font-size: 16px;
+
+        }
+    }
+    a{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: gray;
+        color: white;
+        word-spacing: 1px;
+
+    }
+    margin: 100px;
 }
+
