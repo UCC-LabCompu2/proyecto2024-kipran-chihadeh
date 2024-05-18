@@ -11,6 +11,27 @@ b{
 }
 nav{
     ul{
+        input{
+            width: 300px;
+            margin: 0 50px
+        }
+
+        button{
+            width: 30px;
+            height: 30px;
+            margin: 10px -24px
+        }
+        b{
+
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+            font-weight: 5000;
+            border-radius: 10px;
+            padding: 10px 20px;
+            background-color: aquamarine;
+            color: black;
+            text-decoration: none;
+        }
         margin: 150px -10px;
         input{
             font-size: 16px;
@@ -20,14 +41,35 @@ nav{
     a{
         font-family: Arial, Helvetica, sans-serif;
         font-size: 15px;
-        font-weight: 500;
+        font-weight: 5000;
         border-radius: 10px;
         padding: 10px 20px;
-        background-color: gray;
-        color: white;
-        word-spacing: 1px;
-
+        background-color: aquamarine;
+        color: gray;
+        text-decoration: none;
     }
     margin: 100px;
+}
+b{
+    img{
+        margin: 250px 300px
+    }
+}
+aside{
+    h3 {
+        font-size: 30px;
+        margin: 0 200px;
+
+    }
+
+    a{
+        font-size: 30px;
+        text-decoration: none;
+        color: black;
+        border-radius: 10px;
+        padding: 10px 20px;
+        background-color: grey;
+        margin: 190px
+    }
 }
 
