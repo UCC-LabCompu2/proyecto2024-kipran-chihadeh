@@ -16,10 +16,14 @@ nav{
             margin: 0 50px
         }
 
-
+        button{
+            width: 30px;
+            height: 30px;
+            margin: 10px -24px
+        }
         b{
 
-            font-family: Arial, Helvetica, sans-serif;
+            font-family: "Times New Roman", Helvetica, sans-serif;
             font-size: 15px;
             font-weight: 5000;
             border-radius: 10px;
@@ -35,7 +39,7 @@ nav{
         }
     }
     a{
-        font-family: Arial, Helvetica, sans-serif;
+        font-family: "Times New Roman", Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 5000;
         border-radius: 10px;
@@ -55,6 +59,11 @@ aside{
     h3 {
         font-size: 30px;
         margin: 0 200px;
+        font-family: "Times New Roman", Helvetica, sans-serif;
+
+    p{
+        font-size: 15px;
+    }
     }
 
     a{
@@ -64,7 +73,7 @@ aside{
         border-radius: 10px;
         padding: 10px 20px;
         background-color: grey;
-        margin: 190px
+        margin: 40px;
     }
 }
 
