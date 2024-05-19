@@ -11,6 +11,9 @@ b{
 }
 nav{
     ul{
+        label{
+            margin:0 -72px;
+        }
         input{
             width: 300px;
             margin: 0 50px
@@ -18,8 +21,8 @@ nav{
 
         button{
             width: 30px;
-            height: 30px;
-            margin: 10px -24px
+            height: 25px;
+            margin: -30px -2px
         }
         b{
 
@@ -57,12 +60,13 @@ b{
 }
 aside{
     h3 {
-        font-size: 30px;
+        font-size: 40px;
         margin: 0 200px;
         font-family: "Times New Roman", Helvetica, sans-serif;
 
     p{
-        font-size: 15px;
+        font-size: 20px;
+        margin: -20px 0;
     }
     }
 
@@ -75,5 +79,19 @@ aside{
         background-color: grey;
         margin: 40px;
     }
+.imagen01{
+    margin: -150px 600px;
 }
+    .imagen2 {
+        margin: -500px -30px;
+        width: 450px;
+    }
+b {
+    font-size: 40px;
+    margin: 80px -55px;
+    word-spacing: 1px;
+}
+}
+
+
 
