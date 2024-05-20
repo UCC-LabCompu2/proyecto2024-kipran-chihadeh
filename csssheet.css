@@ -14,7 +14,7 @@ h1{
     width:1450px;
 }
 .logo{
-    margin:-15px -12px
+    margin:-15px -12px;
 }
 b{
     word-spacing: 20px;
@@ -49,7 +49,7 @@ nav{
             font-weight: 5000;
             border-radius: 10px;
             padding: 10px 20px;
-            background-color: aquamarine;
+            background-color: cadetblue;
             color: black;
             text-decoration: none;
         }
@@ -66,7 +66,7 @@ nav{
         border-radius: 10px;
         padding: 10px 15px;
         background-color: aquamarine;
-        color: gray;
+        color: black;
         text-decoration: none;
     }
     margin: 100px;
@@ -103,10 +103,12 @@ aside{
     .imagen01{
         margin: -150px 600px;
         width: 300px;
+        border: 5px solid darkblue;
     }
     .imagen2 {
         margin: -350px 0;
         width: 310px;
+        border: 5px solid darkblue;
     }
     b {
         font-size: 30px;
