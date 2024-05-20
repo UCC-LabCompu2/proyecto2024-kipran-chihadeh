@@ -1,6 +1,10 @@
 body {
     background-image: url("imagenes/logo.JPG");
     background-attachment: fixed;
+    margin-left:auto;
+    margin-right:auto;
+    margin-bottom:auto;
+
 }
 h1{
     margin:-10px 10px ;
@@ -59,7 +63,7 @@ nav{
         font-size: 15px;
         font-weight: 5000;
         border-radius: 10px;
-        padding: 10px 20px;
+        padding: 10px 15px;
         background-color: aquamarine;
         color: gray;
         text-decoration: none;
@@ -68,7 +72,9 @@ nav{
 }
 b{
     img{
-        margin: 250px 300px
+        margin: 250px 300px;
+        border-width: 100px;
+        border-style: solid;
     }
 }
 aside{
