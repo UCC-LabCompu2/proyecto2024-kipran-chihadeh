@@ -1,4 +1,4 @@
-body{
+body {
     background-image: url("imagenes/logo.JPG");
     background-attachment: fixed;
 }
@@ -7,6 +7,7 @@ h1{
     font-size: 70px;
     border-radius: 0;
     background-color: white;
+    width:1450px;
 }
 .logo{
     margin:-15px -12px
@@ -19,6 +20,11 @@ b{
 }
 nav{
     ul{
+        word-spacing: 0;
+
+        a{
+            margin: 0 20px;
+        }
         label{
             margin:0 -72px;
         }
