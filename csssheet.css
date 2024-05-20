@@ -1,5 +1,6 @@
 body{
     background-image: url("imagenes/logo.JPG");
+    background-attachment: fixed;
 }
 h1{
     margin:-10px 10px ;
@@ -32,7 +33,6 @@ nav{
             margin: -30px -2px
         }
         b{
-
             font-family: "Times New Roman", Helvetica, sans-serif;
             font-size: 15px;
             font-weight: 5000;
