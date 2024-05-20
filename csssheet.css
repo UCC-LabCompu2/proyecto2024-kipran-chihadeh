@@ -7,14 +7,17 @@ body {
 
 }
 h1{
+
     margin:-10px 10px ;
     font-size: 70px;
     border-radius: 0;
-    background-color: white;
-    width:1450px;
+    background-image: url("imagenes/fondo banner.jpg");
+    width:1481px;
+
 }
 .logo{
     margin:-15px -12px;
+    border:5px solid royalblue;
 }
 b{
     word-spacing: 20px;
@@ -40,7 +43,7 @@ nav{
 
         button{
             width: 50px;
-            height: 34px;
+            height: 30px;
             margin: -30px -2px;
         }
         b{
@@ -55,7 +58,8 @@ nav{
         }
         margin: 150px -10px;
         input{
-            font-size: 16px;
+            font-size: 17px;
+            margin: 0 19px;
 
         }
     }
@@ -97,22 +101,22 @@ aside{
         color: black;
         border-radius: 10px;
         padding: 10px 20px;
-        background-color: grey;
+        background-color: cornflowerblue;
         margin: 45px;
     }
     .imagen01{
-        margin: -150px 600px;
+        margin: -150px 0;
         width: 300px;
         border: 5px solid darkblue;
     }
     .imagen2 {
-        margin: -350px 0;
+        margin: 30px  0;
         width: 310px;
         border: 5px solid darkblue;
     }
     b {
         font-size: 30px;
-        margin: 80px 80px;
+        margin: 30px 179px;
         word-spacing: 1px;
     }
 }
