@@ -1,13 +1,12 @@
 body {
-    background-image: url("imagenes/logo.JPG");
+    background-image: url("Imagenes/logo.JPG");
     background-attachment: fixed;
     margin-left:auto;
     margin-right:auto;
     margin-bottom:auto;
-
 }
 h1{
-    color: white;
+color: white;
     margin:-10px 10px ;
     font-size: 70px;
     border-radius: 0;
@@ -20,20 +19,19 @@ h1{
     border:5px solid royalblue;
 }
 b{
-    word-spacing: 20px;
+    word-spacing: 1px;
     font-size: 15px;
     float: right;
-    margin: -250px -90px;
+    margin: -190px -90px;
 }
 nav{
     ul{
-        word-spacing: 0;
-
+        margin-right: auto;
         a{
-            margin: 0 20px;
+            margin: 0 -20px;
         }
         label{
-            margin:0 -72px;
+            margin:100px -60px;
         }
         input{
             width: 400px;
@@ -44,7 +42,7 @@ nav{
         button{
             width: 50px;
             height: 30px;
-            margin: -30px -2px;
+            margin: -20px -9px;
         }
         b{
             font-family: "Times New Roman", Helvetica, sans-serif;
@@ -62,7 +60,7 @@ nav{
         }
         input{
             font-size: 17px;
-            margin: 0 19px;
+            margin: 20px -10px;
 
         }
     }
@@ -76,7 +74,7 @@ nav{
         color: black;
         text-decoration: none;
     }
-    margin: 100px;
+    margin: 300px 50px;
 }
 b{
     img{
@@ -117,12 +115,13 @@ aside{
         width: 310px;
         border: 5px solid darkblue;
     }
+    }
     b {
         font-size: 30px;
         margin: -350px 100px;
         word-spacing: 1px;
     }
-}
+
 
 
 
