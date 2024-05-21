@@ -60,12 +60,19 @@ b{
             width: 350px;
             margin: 0 50px;
             height: 26px;
+            border-radius: 10px;
+            padding: 3px;
+            background-color: cornflowerblue;
+
         }
 
         button{
             width: 52px;
             height: 32px;
-            margin: -30px -2px;
+            margin: -32px -5px;
+            border-radius: 10px;
+            border: 1px;
+
         }
         b{
             font-family: "Times New Roman", Helvetica, sans-serif;
@@ -79,7 +86,7 @@ b{
         }
         margin: 150px -10px;
         i{
-            margin:8px;
+            margin:7px;
         }
         input{
             font-size: 17px;
@@ -144,6 +151,108 @@ aside{
         word-spacing: 1px;
     }
 }
+.titulo{
+    margin: -30px;
+    font-size: 40px;
+}
+.subtitulo{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 20px;
+    margin: -20px 310px;
+    word-spacing: 1px;
+    color: white;
+   text-align: center;
+
+}
+.subtitulo2{
+    color:white;
+font-size: 25px;
+    margin: 100px 80px;
+}
+.procesador{
+    font-size: 30px;
+    margin: -85px 230px;
+    color: white;
+}
+.fprocesador{
+    width: 150px;
+    margin: -100px 50px;
+    border: 5px solid darkblue;
+}
+.seleccion1 {
+    margin: 100px 180px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: cornflowerblue;
+}
+.fplaca{
+    width: 150px;
+    margin: -55px 700px;
+    border: 5px solid darkblue;
+}
+
+
+.seleccion2{
+    margin:180px 830px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: cornflowerblue;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 15px;
+}
+.Placa{
+    font-size: 30px;
+margin:-170px 250px;
+
+    color: white;
+    word-spacing: 1px;
+    text-align: right;
+
+}
+.fmonitor{
+    width: 150px;
+    border: 5px solid darkblue;
+    margin: 0 10px;
+}
+.resolucion{
+    font-size: 30px;
+    color: white;
+    margin: -100px 190px;
+}
+.seleccion3{
+    margin: 0px 180px;
+    width: 300px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: cornflowerblue;
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 15px;
+}
+.resultado{
+    text-align: right;
+    margin: 0px 350px;
+    font-size: 30px;
+    color: white;
+}
+.resultado{
+    float: right;
+    margin: 0 300px;
+    .calcular{
+float: left;
+        width: 150px;
+        height: 50px;
+        border-radius: 10px;
+        border: 4px solid grey;
+        background-color: royalblue;
+    }
+}
+
+
 
 
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+<meta CHARSET="UTF-8">
 <link rel="shortcut icon" href="Imagenes/R.png" type="R.png">
 <header>
     <title class="titulo"> MyPc </title>
@@ -30,15 +31,44 @@
 
     </nav>
 </b>
-<h2>Nuestras Calculadoras
-    <p>
-        Acá vas a poder elegir entre multiples calculadoras que te ayudaran a armar la mejor PC según tus gustos y necesidades
+<h2 class="titulo">Nuestras Calculadoras</h2><br>
+    <b class="subtitulo">
+        Aquí vas a poder elegir entre multiples calculadoras que te ayudaran a armar la <br>mejor PC segun tus gustos y necesidades
+    </b>
+<h3 class="subtitulo2">Calculadora de cuello de botella</h3>
+<img src="Imagenes/procesador.png" class="fprocesador" alt="image"><img src="Imagenes/placa%20de%20video.png" class="fplaca" alt="image">
+<ul class="selecciones">
+<h4 class="procesador">  Procesador</h4>
+<label for="procesador"></label>
+<select id="procesador" name="seleccione procesador" class="seleccion1">
+    <option value="Seleccione Procesador">Seleccione Procesador...</option>
+    <option value="Intel">Intel</option>
+    <option value="AMD">AMD</option>
+</select>
+    <h4 class="Placa">Placa de video</h4>
+        <label for="placa de video"></label>
+        <select id="placa de video" name="Selecciones Placa de video" class="seleccion2">
+            <option value="seleccione Placa de Video">Seleccione Placa de Video...</option>
+            <option value="AMD">AMD</option>
+            <option value="NVIDIA">NVIDIA</option>
+            <option value="MSI">MSI</option>
+            <option value="ASUS">ASUS</option>
+        </select>
+    <br>
+    <img src="Imagenes/monitor.png" class="fmonitor" alt="image">
+    <label for="resolucion de Pantalla"></label>
+    <h4 class="resolucion">Resolucion de Pantalla</h4> <h3 class="resultado">
+    <button onclick="search()" class="calcular">Calcular</button><br><br>
+    Resultados de la Calculadora
+</h3>
+    <select id="resolucion de Pantalla" name="Resolucion de Pantalla" class="seleccion3">
+        <option value="Seleccione Resolucion...">Seleccione Resolucion de Pantalla...</option>
+        <option value="720p">720p</option>
+        <option value="1080p">1080p</option>
 
-    </p>
-</h2>
-<br><br>
+    </select>
 
-
+</ul>
 
 
 
