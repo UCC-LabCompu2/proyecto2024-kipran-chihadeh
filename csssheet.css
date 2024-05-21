@@ -158,7 +158,7 @@ aside{
 .subtitulo{
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 20px;
-    margin: -20px 310px;
+    margin: -20px 400px;
     word-spacing: 1px;
     color: white;
    text-align: center;
@@ -206,7 +206,7 @@ font-size: 25px;
 }
 .Placa{
     font-size: 30px;
-margin:-170px 250px;
+margin:-170px 350px;
 
     color: white;
     word-spacing: 1px;
@@ -254,7 +254,11 @@ float: left;
         color: black;
     }
 }
+.ram{
 
+
+
+}
 
 
 
