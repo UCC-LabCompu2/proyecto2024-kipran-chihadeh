@@ -6,7 +6,12 @@ body {
     margin-bottom:auto;
 
 }
-h1{
+.nodecoration{
+    text-decoration: none;
+    text-color: white;
+
+}
+.h1{
     color: white;
     margin:-10px 10px ;
     font-size: 70px;
@@ -14,6 +19,22 @@ h1{
     background-image: url("imagenes/fondo banner.jpg");
     width:1481px;
 
+}
+h2{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 40px;
+    font-weight: 3000;
+    border-radius: 20px;
+    padding: 50px 500px;
+    color: white;
+    text-align: center;
+}
+.p{
+    font-size: 20px;
+    margin-top: -50px;
+    font-weight: normal;
+    text-align: center;
+    color: white;
 }
 .logo{
     margin:-15px -12px;
@@ -25,7 +46,7 @@ b{
     float: right;
     margin: -250px -90px;
 }
-nav{
+.nav{
     ul{
         word-spacing: 0;
 
