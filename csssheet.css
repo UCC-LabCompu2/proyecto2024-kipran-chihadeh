@@ -424,6 +424,54 @@ float: left;
 .selecciones1{
 
     text-align: left;
+}
+.T{
+    text-align: center;
+    font-size: 30px;
+    color: white;
+}
+.compu1{
+    width: 200px
+}
+.armado{
+    color: white;
+    font-size: 20px;
+}
+.P{
+    color: white;
+    font-size: 30px;
+}
+.p1{
+    float: right;
+    margin-left: 20px;
+    border: 5px solid aquamarine;
+}
+.d1{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+}
+.precio1{
+    color: black;
+    float: right;
+    text-align: right;
+    margin: -10px;
+    font-size: 40px;
+    border: 5px solid black;
+    width: 220px;
+    border-radius: 10px;
+    background-color: #b3d4fc;
+}
+.publi1{
 
-
+    border: 3px solid aquamarine;
+    height: 225px;
+    width: 1000px;
+}
+.p2{
+    margin-left: 20px;
+    float: right;
+    width: 250px;
+    height: 190px;
+    border: 5px solid aquamarine;
 }
