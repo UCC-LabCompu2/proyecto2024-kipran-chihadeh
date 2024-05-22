@@ -393,18 +393,37 @@ float: left;
 
 .boton{
 
-    margin:130px 700px auto;
+    margin:100px 700px auto;
     border-radius: 10px;
     width: 150px;
     height: 60px;
     background-color: royalblue;
+    font-size: 20px;
+    font-weight: bold;
 }
 .resultado2{
-    text-align: right;
+    text-align: left;
     color: white;
     font-size: 20px;
-    margin: 20px 600px;
+
 
 }
+.resultado3{
+    text-align: left;
+    color: white;
+    font-size: 20px;
+}
+.cuadro{
+    border: 5px solid royalblue;
+    padding: 5px;
+    text-align: right;
+    margin: 0 700px;
+    width: 300px;
+
+}
+.selecciones1{
+
+    text-align: left;
 
 
+}
