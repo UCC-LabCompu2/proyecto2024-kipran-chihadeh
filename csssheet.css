@@ -526,23 +526,44 @@ margin:-170px 350px;
 .boton1 {
     text-align: center;
     float: right;
-    margin: 400px 250px;
+    margin: 100px -400px ;
     border-radius: 10px;
     width: 150px;
     height: 60px;
     background-color: royalblue;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
 }
 .boton3{
     text-align: center;
     float: right;
-    margin: -459px 500px ;
+    margin: 100px -100px ;
     border-radius: 10px;
     width: 150px;
     height: 60px;
     background-color: royalblue;
     font-size: 20px;
     font-weight: bold;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
 
 }
+.total1{
+    text-align: right;
+    float: right;
+    color: white;
+    font-size: 20px;
+    margin: 100px 450px;
+}
+.total2{
+    float: right;
+    border: 5px solid royalblue;
+    width: 600px;
+    height: 300px;
+    margin: 100px;
+}
+
