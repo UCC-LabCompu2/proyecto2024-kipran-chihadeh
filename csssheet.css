@@ -496,3 +496,53 @@ margin:-170px 350px;
     font-size: 20px;
     font-weight: bold;
 }
+.subtitulo3{
+
+    color:white;
+    font-size: 30px;
+    margin: 90px 80px;
+}
+.productos {
+
+    color: white;
+    font-size: 20px;
+    margin: -30px 85px;
+}
+.compra1{
+
+    color: white;
+    text-align:left;
+    font-size: 20px;
+    margin: 5px;
+}
+.cuadro1{
+    border: 5px solid royalblue;
+    padding: 5px;
+    text-align: left;
+    margin: 0 230px;
+    width: 350px;
+    height: 100px;
+}
+.boton1 {
+    text-align: center;
+    float: right;
+    margin: 400px 250px;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: royalblue;
+    font-size: 20px;
+    font-weight: bold;
+}
+.boton3{
+    text-align: center;
+    float: right;
+    margin: -459px 500px ;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: royalblue;
+    font-size: 20px;
+    font-weight: bold;
+
+}
