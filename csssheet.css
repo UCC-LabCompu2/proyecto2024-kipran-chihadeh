@@ -240,19 +240,29 @@ margin:-170px 350px;
     color: white;
 }
 .resultado{
+    text-align: left;
     float: right;
     margin: 0 300px;
-    .calcular{
-        text-align: center;
-float: left;
-        width: 150px;
-        height: 50px;
-        border-radius: 10px;
-        border: 4px solid grey;
-        background-color: royalblue;
-        text-decoration: none;
-        color: black;
-    }
+    border: 5px solid royalblue;
+    padding: 5px;
+    width: 500px;
+
+
+}
+.calcular{
+    font-family: "Times New Roman", Helvetica, sans-serif;
+    font-size: 30px;
+    text-align: center;
+    float: right;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid grey;
+    background-color: royalblue;
+    text-decoration: none;
+    color: black;
+    margin: 10px 660px;
+    font-weight: bold;
 }
 .titulo{
     text-align: center;
@@ -412,6 +422,7 @@ float: left;
     text-align: left;
     color: white;
     font-size: 20px;
+
 }
 .cuadro{
     border: 5px solid royalblue;
@@ -474,4 +485,14 @@ float: left;
     width: 250px;
     height: 190px;
     border: 5px solid aquamarine;
+}
+.boton2{
+    float: right;
+    margin: -30px 80px;
+    border-radius: 10px;
+    width: 150px;
+    height: 60px;
+    background-color: royalblue;
+    font-size: 20px;
+    font-weight: bold;
 }
