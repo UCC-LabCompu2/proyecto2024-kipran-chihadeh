@@ -1,0 +1,42 @@
+Index: Index.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><!DOCTYPE html>\r\n<html lang=\"es\">\r\n<meta charset=\"utf-8\"/>\r\n<meta name=\"Autor\" content=\"Duarte Franco\"/>\r\n<meta name=\"Autor\" content=\"Chihadeh Lucas\" />\r\n<meta name=\"Palabras claves\" content=\"HTML,CSS\"/>\r\n<meta name=\"Descripción\" content=\"Página de armado de PC\" />\r\n<link rel=\"shortcut icon\" href=\"Imagenes/Favicon.png\" type=\"R.png\"/>\r\n<header>\r\n    <title class=\"titulo\"> MyPc </title>\r\n    <link rel=\"stylesheet\" href=\"csssheet.css\" type=\"text/css\">\r\n    <link rel=\"stylesheet\" href=\"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css\">\r\n    <link rel=\"shortcut icon\" href=\"Imagenes/imagenlogo.jpg\" type=\"image/x-icon\">\r\n</header>\r\n<h1 class=\"h1\"><img src=\"Imagenes/imagenlogo.jpg\" width=150 alt=\"image\" class=\"logo\"> MyPc</h1>\r\n\r\n<body>\r\n<b>\r\n    <nav class=\"nav\">\r\n        <ul>\r\n            <label for=\"searchImput\">\r\n                <input type=\"text\" id=\"searchImput\" placeholder=\"buscar...\">\r\n            </label>\r\n            <button onclick=\"search()\"><i class=\"fa fa-search\"></i>\r\n            </button>\r\n            <a href=\"pagina4.html\">Catálogo</a>\r\n            <a href=\"pagina3.html\"> Arma Tu Pc</a>\r\n            <a href=\"pagina2.html\">Calculadora</a>\r\n            <a href=\"pagina5.html\">\r\n                <i class=\"fa fa-shopping-cart\"></i>\r\n            </a>\r\n        </ul>\r\n\r\n    </nav>\r\n</b>\r\n<br><br>\r\n<aside>\r\n    <h3> Utiliza nuestra calculadora para<br> descubrir si tu PC puede estar <br> sufriendo un posible cuello<br> de botella.\r\n        <img src=\"Imagenes/imagenpc.jpg\" class=\"imagen01\" alt=\"image\">\r\n        <br><br>\r\n        <p>\r\n            Simplemente coloca tus componentes,<br> selecciona la opcion de calcular <br> y deja que\r\n            nuestra calculadora haga todo el<br> trabajo por vos.\r\n\r\n        </p>\r\n        <br>\r\n        <a href=\"pagina2.html\">Usar Calculadora</a>\r\n        <br>\r\n        <img src=\"Imagenes/calculadora.jpg\" class=\"imagen2\" alt=\"image\">\r\n        <b>Revisa nuestra amplia gama de<br> productos para PC y construi la <br>tuya desde cero ahora mismo.<br><br>\r\n            <p>Seleccione aquellos componentes que<br> quieras pára tu pc y evalua tanto su <br> precio como su consumo\r\n            </p> <br> <a href=\"pagina3.html\">Arma Tu PC</a><br>\r\n        </b>\r\n    </h3>\r\n    <br>\r\n\r\n</aside>\r\n<br>\r\n</body>\r\n</html>\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Index.html b/Index.html
+--- a/Index.html	(revision c740bfe2aa91978ed19a8d3eb4dad194259f42b9)
++++ b/Index.html	(date 1718487003857)
+@@ -1,19 +1,17 @@
+ <!DOCTYPE html>
+ <html lang="es">
+-<meta charset="utf-8"/>
+-<meta name="Autor" content="Duarte Franco"/>
+-<meta name="Autor" content="Chihadeh Lucas" />
+-<meta name="Palabras claves" content="HTML,CSS"/>
+-<meta name="Descripción" content="Página de armado de PC" />
+-<link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
+-<header>
+-    <title class="titulo"> MyPc </title>
+-    <link rel="stylesheet" href="csssheet.css" type="text/css">
+-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+-    <link rel="shortcut icon" href="Imagenes/imagenlogo.jpg" type="image/x-icon">
+-</header>
+-<h1 class="h1"><img src="Imagenes/imagenlogo.jpg" width=150 alt="image" class="logo"> MyPc</h1>
+-
++<head>
++    <title class="titulo"> MyPc </title>
++    <link rel="stylesheet" href="csssheet.css" type="text/css">
++    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
++    <img src="Imagenes/imagenlogo.jpg" width=150 alt="image" class="logo"> MyPc>
++    <link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
++    <meta charset="utf-8"/>
++    <meta name="Autor" content="Duarte Franco"/>
++    <meta name="Autor" content="Chihadeh Lucas" />
++    <meta name="Palabras claves" content="HTML,CSS"/>
++    <meta name="Descripción" content="Página de armado de PC" />
++</head>
+ <body>
+ <b>
+     <nav class="nav">
