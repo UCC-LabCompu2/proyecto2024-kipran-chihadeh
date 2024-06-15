@@ -1,26 +1,23 @@
 body {
     background-image: url("imagenes/logo.JPG");
     background-attachment: fixed;
-    margin-left:auto;
-    margin-right:auto;
-    margin-bottom:auto;
-
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: auto;
 }
-.nodecoration{
+.nodecoration {
     text-decoration: none;
     color: white;
-
 }
-.h1{
+.h1 {
     color: white;
-    margin:-10px 10px ;
+    margin: -10px 10px;
     font-size: 70px;
     border-radius: 0;
     background-image: url("imagenes/fondo banner.jpg");
-    width:1481px;
-
+    width: 1481px;
 }
-h2{
+.h2 {
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 40px;
     font-weight: 3000;
@@ -29,34 +26,38 @@ h2{
     color: white;
     text-align: center;
 }
-.p{
+.p {
     font-size: 20px;
     margin-top: -50px;
     font-weight: normal;
     text-align: center;
     color: white;
 }
-.logo{
-    margin:-15px -12px;
-    border:5px solid royalblue;
+.logo {
+    margin: -15px -12px;
+    border: 5px solid royalblue;
 }
-b{
+
+.b {
     word-spacing: 20px;
     font-size: 15px;
     float: right;
-    margin: -250px -90px;
+    margin: -180px -90px;
 }
-.nav{
-    ul{
+
+.nav {
+    ul {
         word-spacing: 0;
 
-        a{
+        a {
             margin: 0 20px;
         }
-        label{
-            margin:0 -72px;
+
+        label {
+            margin: 0 -72px;
         }
-        input{
+
+        input {
             width: 350px;
             margin: 0 50px;
             height: 26px;
@@ -66,7 +67,7 @@ b{
 
         }
 
-        button{
+        button {
             width: 52px;
             height: 32px;
             margin: -32px -5px;
@@ -74,7 +75,8 @@ b{
             border: 1px;
 
         }
-        b{
+
+        b {
             font-family: "Times New Roman", Helvetica, sans-serif;
             font-size: 15px;
             font-weight: 5000;
@@ -84,17 +86,21 @@ b{
             color: black;
             text-decoration: none;
         }
+
         margin: 150px -10px;
-        i{
-            margin:7px;
+
+        i {
+            margin: 7px;
         }
-        input{
+
+        input {
             font-size: 17px;
             margin: 0 19px;
 
         }
     }
-    a{
+
+    a {
         font-family: "Times New Roman", Helvetica, sans-serif;
         font-size: 15px;
         font-weight: 5000;
@@ -104,29 +110,32 @@ b{
         color: black;
         text-decoration: none;
     }
+
     margin: 100px;
 }
-b{
-    img{
+
+b {
+    img {
         margin: 250px 300px;
         border-width: 100px;
         border-style: solid;
     }
 }
-aside{
+
+aside {
     h3 {
         font-size: 30px;
         margin: 0 300px;
         font-family: "Times New Roman", Helvetica, sans-serif;
         color: white;
 
-        p{
+        p {
             font-size: 20px;
             margin: -20px 0;
         }
     }
 
-    a{
+    a {
         font-size: 30px;
         text-decoration: none;
         color: black;
@@ -135,50 +144,59 @@ aside{
         background-color: cornflowerblue;
         margin: 45px;
     }
-    .imagen01{
+
+    .imagen01 {
         margin: -150px 450px;
         width: 300px;
         border: 5px solid darkblue;
     }
+
     .imagen2 {
         margin: 30px -10px;
         width: 310px;
         border: 5px solid darkblue;
     }
+
     b {
         font-size: 30px;
         margin: 40px 10px;
         word-spacing: 1px;
     }
 }
-.titulo{
+
+.titulo {
     margin: -30px;
     font-size: 40px;
 }
-.subtitulo{
+
+.subtitulo {
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 20px;
     margin: -20px 400px;
     word-spacing: 1px;
     color: white;
-   text-align: center;
+    text-align: center;
 
 }
-.subtitulo2{
-    color:white;
-font-size: 25px;
+
+.subtitulo2 {
+    color: white;
+    font-size: 25px;
     margin: 100px 80px;
 }
-.procesador{
+
+.procesador {
     font-size: 30px;
     margin: -85px 230px;
     color: white;
 }
-.fprocesador{
+
+.fprocesador {
     width: 150px;
     margin: -100px 50px;
     border: 5px solid darkblue;
 }
+
 .seleccion1 {
     margin: 100px 180px;
     width: 300px;
@@ -187,15 +205,14 @@ font-size: 25px;
     padding: 3px;
     background-color: cornflowerblue;
 }
-.fplaca{
+
+.fplaca {
     width: 150px;
     margin: -55px 700px;
     border: 5px solid darkblue;
 }
-
-
-.seleccion2{
-    margin:180px 830px;
+.seleccion2 {
+    margin: 180px 830px;
     width: 300px;
     height: 30px;
     border-radius: 10px;
@@ -204,26 +221,30 @@ font-size: 25px;
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 15px;
 }
-.Placa{
+
+.Placa {
     font-size: 30px;
-margin:-170px 350px;
+    margin: -170px 350px;
 
     color: white;
     word-spacing: 1px;
     text-align: right;
 
 }
-.fmonitor{
+
+.fmonitor {
     width: 150px;
     border: 5px solid darkblue;
     margin: 0 10px;
 }
-.resolucion{
+
+.resolucion {
     font-size: 30px;
     color: white;
     margin: -100px 190px;
 }
-.seleccion3{
+
+.seleccion3 {
     margin: 0 180px;
     width: 300px;
     height: 30px;
@@ -233,13 +254,15 @@ margin:-170px 350px;
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 15px;
 }
-.resultado{
+
+.resultado {
     text-align: right;
     margin: 0 350px;
     font-size: 30px;
     color: white;
 }
-.resultado{
+
+.resultado {
     text-align: left;
     float: right;
     margin: 0 300px;
@@ -249,7 +272,8 @@ margin:-170px 350px;
 
 
 }
-.calcular{
+
+.calcular {
     font-family: "Times New Roman", Helvetica, sans-serif;
     font-size: 30px;
     text-align: center;
@@ -264,26 +288,30 @@ margin:-170px 350px;
     margin: 10px 660px;
     font-weight: bold;
 }
-.titulo{
+
+.titulo {
     text-align: center;
     color: white;
     font-size: 40px;
 }
+
 .Subtitulo {
     text-align: center;
     color: white;
     font-size: 20px;
 }
 
-.opciones{
-   margin: 100px;
+.opciones {
+    margin: 100px;
     text-align: left;
 
 
 }
-.opcion0{
+
+.opcion0 {
     float: left;
-    .img1{
+
+    .img1 {
         width: 150px;
         margin-right: 130px;
         border-radius: 10px;
@@ -291,9 +319,11 @@ margin:-170px 350px;
         background-color: cornflowerblue;
     }
 }
-.opcion1{
+
+.opcion1 {
     float: left;
-    .img2{
+
+    .img2 {
         width: 150px;
         margin-right: 130px;
         border-radius: 10px;
@@ -301,19 +331,23 @@ margin:-170px 350px;
         background-color: cornflowerblue;
     }
 }
-.opcion2{
+
+.opcion2 {
     float: left;
-.img3{
-    width: 150px;
-    margin-right: 130px;
-    border-radius: 10px;
-    padding: 3px;
-    background-color: cornflowerblue;
+
+    .img3 {
+        width: 150px;
+        margin-right: 130px;
+        border-radius: 10px;
+        padding: 3px;
+        background-color: cornflowerblue;
+    }
 }
-}
-.opcion3{
+
+.opcion3 {
     float: left;
-    .img4{
+
+    .img4 {
         width: 150px;
         margin-right: 130px;
         border-radius: 10px;
@@ -322,27 +356,34 @@ margin:-170px 350px;
     }
 
 }
-.opcion4{
+
+.opcion4 {
     float: left;
-    .img5{
+
+    .img5 {
         width: 150px;
         border-radius: 10px;
         padding: 3px;
         background-color: cornflowerblue;
     }
+
     margin: 300px -1150px;
 }
-.opcion5{
+
+.opcion5 {
     float: left;
-    .img6{
+
+    .img6 {
         width: 140px;
         border-radius: 10px;
         padding: 3px;
         background-color: cornflowerblue;
     }
+
     margin: 300px -850px;
 }
-.PROCESADOR{
+
+.PROCESADOR {
     width: 180px;
     height: 50px;
     border-radius: 10px;
@@ -351,7 +392,8 @@ margin:-170px 350px;
     text-decoration: none;
     color: black;
 }
-.VIDEO{
+
+.VIDEO {
     width: 180px;
     height: 50px;
     border-radius: 10px;
@@ -360,50 +402,54 @@ margin:-170px 350px;
     text-decoration: none;
     color: black;
 }
-.FUENTE{
 
-        width: 180px;
-        height: 50px;
-        border-radius: 10px;
-        border: 4px solid grey;
-        background-color: royalblue;
-        text-decoration: none;
-        color: black;
-}
-.PM{
+.FUENTE {
 
-        width: 180px;
-        height: 50px;
-        border-radius: 10px;
-        border: 4px solid grey;
-        background-color: royalblue;
-        text-decoration: none;
-        color: black;
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid grey;
+    background-color: royalblue;
+    text-decoration: none;
+    color: black;
+}
 
-}
-.RAM{
-        width: 180px;
-        height: 50px;
-        border-radius: 10px;
-        border: 4px solid grey;
-        background-color: royalblue;
-        text-decoration: none;
-        color: black;
-}
-.PERIFERICOS{
-        width: 180px;
-        height: 50px;
-        border-radius: 10px;
-        border: 4px solid grey;
-        background-color: royalblue;
-        text-decoration: none;
-        color: black;
+.PM {
+
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid grey;
+    background-color: royalblue;
+    text-decoration: none;
+    color: black;
 
 }
 
-.boton{
+.RAM {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid grey;
+    background-color: royalblue;
+    text-decoration: none;
+    color: black;
+}
 
-    margin:100px 700px auto;
+.PERIFERICOS {
+    width: 180px;
+    height: 50px;
+    border-radius: 10px;
+    border: 4px solid grey;
+    background-color: royalblue;
+    text-decoration: none;
+    color: black;
+
+}
+
+.boton {
+
+    margin: 100px 700px auto;
     border-radius: 10px;
     width: 150px;
     height: 60px;
@@ -411,20 +457,23 @@ margin:-170px 350px;
     font-size: 20px;
     font-weight: bold;
 }
-.resultado2{
+
+.resultado2 {
     text-align: left;
     color: white;
     font-size: 20px;
 
 
 }
-.resultado3{
+
+.resultado3 {
     text-align: left;
     color: white;
     font-size: 20px;
 
 }
-.cuadro{
+
+.cuadro {
     border: 5px solid royalblue;
     padding: 5px;
     text-align: right;
@@ -432,37 +481,45 @@ margin:-170px 350px;
     width: 300px;
 
 }
-.selecciones1{
+
+.selecciones1 {
 
     text-align: left;
 }
-.T{
+
+.T {
     text-align: center;
     font-size: 30px;
     color: white;
 }
-.compu1{
+
+.compu1 {
     width: 200px
 }
-.armado{
+
+.armado {
     color: white;
     font-size: 20px;
 }
-.P{
+
+.P {
     color: white;
     font-size: 30px;
 }
-.p1{
+
+.p1 {
     float: right;
     margin-left: 20px;
     border: 5px solid aquamarine;
 }
-.d1{
+
+.d1 {
     color: white;
     font-size: 20px;
     text-align: right;
 }
-.precio1{
+
+.precio1 {
     color: black;
     float: right;
     text-align: right;
@@ -473,20 +530,23 @@ margin:-170px 350px;
     border-radius: 10px;
     background-color: #b3d4fc;
 }
-.publi1{
+
+.publi1 {
 
     border: 3px solid aquamarine;
     height: 225px;
     width: 1000px;
 }
-.p2{
+
+.p2 {
     margin-left: 20px;
     float: right;
     width: 250px;
     height: 190px;
     border: 5px solid aquamarine;
 }
-.boton2{
+
+.boton2 {
     float: right;
     margin: -30px 80px;
     border-radius: 10px;
@@ -496,26 +556,30 @@ margin:-170px 350px;
     font-size: 20px;
     font-weight: bold;
 }
-.subtitulo3{
 
-    color:white;
+.subtitulo3 {
+
+    color: white;
     font-size: 30px;
     margin: 90px 80px;
 }
+
 .productos {
 
     color: white;
     font-size: 20px;
     margin: -30px 85px;
 }
-.compra1{
+
+.compra1 {
 
     color: white;
-    text-align:left;
+    text-align: left;
     font-size: 20px;
     margin: 5px;
 }
-.cuadro1{
+
+.cuadro1 {
     border: 5px solid royalblue;
     padding: 5px;
     text-align: left;
@@ -523,10 +587,11 @@ margin:-170px 350px;
     width: 350px;
     height: 100px;
 }
+
 .boton1 {
     text-align: center;
     float: right;
-    margin: 100px -400px ;
+    margin: 100px -400px;
     border-radius: 10px;
     width: 150px;
     height: 60px;
@@ -537,10 +602,11 @@ margin:-170px 350px;
     color: black;
     padding: 5px;
 }
-.boton3{
+
+.boton3 {
     text-align: center;
     float: right;
-    margin: 100px -100px ;
+    margin: 100px -100px;
     border-radius: 10px;
     width: 150px;
     height: 60px;
@@ -552,14 +618,16 @@ margin:-170px 350px;
     padding: 5px;
 
 }
-.total1{
+
+.total1 {
     text-align: right;
     float: right;
     color: white;
     font-size: 20px;
     margin: 100px 450px;
 }
-.total2{
+
+.total2 {
     float: right;
     border: 5px solid royalblue;
     width: 600px;
