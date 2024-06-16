@@ -1,58 +1,104 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title class="titulo"> MyPc </title>
-    <link rel="stylesheet" href="csssheet.css" type="text/css">
+    <title class="titulo"> MyPc
+    </title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <img src="Imagenes/imagenlogo.jpg" width=150 alt="image" class="logo"> MyPc>
     <link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
     <meta charset="utf-8"/>
     <meta name="Autor" content="Duarte Franco"/>
-    <meta name="Autor" content="Chihadeh Lucas" />
+    <meta name="Autor" content="Chihadeh Lucas"/>
     <meta name="Palabras claves" content="HTML,CSS"/>
-    <meta name="Descripción" content="Página de armado de PC" />
+    <meta name="Descripción" content="Página de armado de PC"/>
 </head>
 <body>
-<b>
-    <nav class="nav">
-        <ul>
-            <label for="searchImput">
-                <input type="text" id="searchImput" placeholder="buscar...">
-            </label>
-            <button onclick="search()"><i class="fa fa-search"></i>
-            </button>
-            <a href="pagina4.html">Catálogo</a>
-            <a href="pagina3.html"> Arma Tu Pc</a>
-            <a href="pagina2.html">Calculadora</a>
-            <a href="pagina5.html">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-        </ul>
+<header>
+    <div class="container">
+        <a href="Index.html" class="logo">MyPC</a>
+        <nav>
+            <a href="CATALOGO.html">Catálogo</a>
+            <a href="ARMATUPC.html"> Arma Tu Pc</a>
+            <a href="CALCULADORA.html">Calculadora</a>
+            <a href="CARRITODECOMPRAS.html"><i class="fa fa-shopping-cart"></i></a>
+        </nav>
+    </div>
+</header>
+<section id="hero">
+    <h1>Revisá nuestra amplia gama de productos <br> para computadora y armá la PC de tus sueños</h1>
+    <form action="ARMATUPC.html">
+        <button>ARMÁ LA TUYA AHORA!</button>
+    </form>
+</section>
+<section id="background">
+    <section id="calculadora">
+        <div class="container">
 
-    </nav>
-</b>
-<br><br>
-<aside>
-    <h3> Utiliza nuestra calculadora para<br> descubrir si tu PC puede estar <br> sufriendo un posible cuello<br> de botella.
-        <img src="Imagenes/imagenpc.jpg" class="imagen01" alt="image">
-        <br><br>
-        <p>
-            Simplemente coloca tus componentes,<br> selecciona la opcion de calcular <br> y deja que
-            nuestra calculadora haga todo el<br> trabajo por vos.
+            <div class="img-container"></div>
+            <div class="texto">
+                <h2>Calculadora de Cuello de Botella y Consumo</h2>
+                <p>Simplemente coloca tus componentes, selecciona la opcion de calcular y deja que
+                    nuestra calculadora haga todo el trabajo por vos.</p>
+                <form action="CALCULADORA.html">
+                    <button>USAR CALCULADORA</button>
+                </form>
+            </div>
+        </div>
 
-        </p>
-        <br>
-        <a href="pagina2.html">Usar Calculadora</a>
-        <br>
-        <img src="Imagenes/calculadora.jpg" class="imagen2" alt="image">
-        <b>Revisa nuestra amplia gama de<br> productos para PC y construi la <br>tuya desde cero ahora mismo.<br><br>
-            <p>Seleccione aquellos componentes que<br> quieras pára tu pc y evalua tanto su <br> precio como su consumo
-            </p> <br> <a href="pagina3.html">Arma Tu PC</a><br>
-        </b>
-    </h3>
-    <br>
+    </section>
 
-</aside>
-<br>
+
+    <section id="Nuestro-Catalogo">
+        <div class="container">
+            <h2>Nuestro Catalogo</h2>
+            <div class="catalogo">
+
+                <div class="carta">
+                    <h3>Placas de Video</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Procesadores</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Fuentes de Poder</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Placas Madre</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Memoria RAM</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+                <div class="carta">
+                    <h3>Periféricos</h3>
+                    <form action="CATALOGO.html">
+                        <button>+Info</button>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; Universidad Cátolica de Córdoba</p>
+    </div>
+</footer>
 </body>
 </html>

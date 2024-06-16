@@ -1,0 +1,280 @@
+* {
+
+    box-sizing: border-box;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+
+
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.7em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 15px;
+    border: 3px solid darkblue;
+    box-shadow: 2px 2px 5px black;
+    color: black;
+    background-color: cornflowerblue;
+}
+
+button:hover {
+    background-color: #2626ba;
+}
+
+.container {
+    max-width: 1400px;
+    margin: auto;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("Imagenes/fondo banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header .logo {
+
+    margin: 0;
+    padding: 25px 30px;
+    color: black;
+    font-size: 50px;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header nav {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    padding-bottom: 0;
+    padding-right: 0;
+    font-size: 30px;
+
+
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    border-radius: 15px;
+    border: 3px solid darkblue;
+    box-shadow: 2px 2px 5px black;
+    background-color: cornflowerblue;
+}
+
+header a:hover {
+    background-color: #2626ba;
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+    color: white;
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("Imagenes/imgarmatupc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+#hero h1 {
+    color: white;
+}
+
+#background {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("Imagenes/fondo banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+
+}
+
+#calculadora .container {
+    text-align: right;
+    padding: 200px 12px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+#calculadora .texto {
+    width: 50%;
+    text-align: initial;
+    padding: 0 30px;
+    font-size: 20px;
+}
+
+#calculadora .img-container {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url("Imagenes/calculadora.jpg");
+    background-size: cover;
+    background-position: center center;
+    height: 600px;
+    width: 600px;
+}
+
+#Nuestro-Catalogo {
+    color: white;
+    text-align: center;
+}
+
+#Nuestro-Catalogo .container {
+
+    padding: 150px 12px;
+}
+
+#Nuestro-Catalogo p {
+
+    display: none;
+}
+
+#Nuestro-Catalogo h2 {
+
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#Nuestro-Catalogo h3 {
+
+    margin-top: 0;
+    font-size: 20px;
+    text-align: center;
+
+}
+
+#Nuestro-Catalogo .catalogo {
+
+    display: flex;
+    justify-content: center;
+}
+
+#Nuestro-Catalogo .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px;
+    margin: 15px;
+    border-radius: 15px;
+
+}
+
+.carta:first-child {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/placadevideo.jpg);
+
+}
+
+.carta:nth-child(2) {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/procesador.jpg);
+}
+
+.carta:nth-child(3) {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/fuentedealimentacion.jpg);
+}
+
+.carta:nth-child(4) {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/mother.jpg);
+}
+
+.carta:nth-child(5) {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/ram.jpg);
+}
+
+.carta:nth-child(6) {
+    background-image: linear-gradient(
+            0deg,
+            rgba(0, 0, 0, 0.5),
+            rgba(0, 0, 0, 0.5)
+    ), url(Imagenes/Catalogo/perifericos.jpg);
+}
+
+footer {
+    background-color: cornflowerblue;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer .container {
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
