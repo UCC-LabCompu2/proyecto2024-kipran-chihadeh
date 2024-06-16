@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bdbb0c2b-5786-4db2-bb70-ee65edcb232b" name="Changes" comment="toques finales de la pagina">
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/csssheet.css" beforeDir="false" afterPath="$PROJECT_DIR$/csssheet.css" afterDir="false" />
+    <list default="true" id="bdbb0c2b-5786-4db2-bb70-ee65edcb232b" name="Changes" comment="implementacion de JavaScript">
+      <change afterPath="$PROJECT_DIR$/MisfuncionesJS.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_18_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_18_44__Changes_.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CALCULADORA.html" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULADORA.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Mis funciones JS.js" beforeDir="false" />
     </list>
-    <list id="15099afe-4e38-4d52-bbb6-7d37362dd9e4" name="Changes by frank" comment="">
-      <change beforePath="$PROJECT_DIR$/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Index.html" afterDir="false" />
-    </list>
+    <list id="15099afe-4e38-4d52-bbb6-7d37362dd9e4" name="Changes by frank" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,6 +22,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -38,15 +41,6 @@
     &quot;accountId&quot;: &quot;6c8ae783-1def-4797-82d9-ac0c603ee27b&quot;
   }
 }</component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/Index.html">
-      <ranges>
-        <range start1="2" end1="9" start2="2" end2="3" changelist="15099afe-4e38-4d52-bbb6-7d37362dd9e4" />
-        <range start1="12" end1="16" start2="6" end2="14" changelist="15099afe-4e38-4d52-bbb6-7d37362dd9e4" />
-        <range start1="18" end1="19" start2="16" end2="16" changelist="bdbb0c2b-5786-4db2-bb70-ee65edcb232b" />
-      </ranges>
-    </file>
-  </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 4
 }</component>
@@ -119,6 +113,8 @@
       <workItem from="1718467821443" duration="644000" />
       <workItem from="1718484182376" duration="118000" />
       <workItem from="1718485289576" duration="1793000" />
+      <workItem from="1718570847639" duration="2055000" />
+      <workItem from="1718573504225" duration="4951000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
@@ -376,7 +372,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716345400079</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="implementacion de JavaScript">
+      <option name="closed" value="true" />
+      <created>1718571405935</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1718571405935</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -395,6 +399,7 @@
     <MESSAGE value="tercera pagina" />
     <MESSAGE value="agrego catalogo a la pagina" />
     <MESSAGE value="toques finales de la pagina" />
-    <option name="LAST_COMMIT_MESSAGE" value="toques finales de la pagina" />
+    <MESSAGE value="implementacion de JavaScript" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementacion de JavaScript" />
   </component>
 </project>

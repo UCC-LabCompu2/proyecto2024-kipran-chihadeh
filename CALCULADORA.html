@@ -1,8 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <title class="titulo"> MyPc
-    </title>
+    <title>MyPC</title>
     <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
@@ -18,95 +17,83 @@
         <a href="Index.html" class="logo">MyPC</a>
         <nav>
             <a href="CATALOGO.html">Catálogo</a>
-            <a href="ARMATUPC.html"> Arma Tu Pc</a>
+            <a href="ARMATUPC.html">Arma Tu Pc</a>
             <a href="CALCULADORA.html">Calculadora</a>
             <a href="CARRITODECOMPRAS.html"><i class="fa fa-shopping-cart"></i></a>
         </nav>
     </div>
 </header>
 
-
 <section id="background">
     <section id="titulo">
-
         <div class="container">
             <h1 class="titulo">Calculadora</h1>
             <p>
                 Simplemente coloca los componentes de tu PC y deja que nuestra calculadora haga todo por vos.
             </p>
         </div>
-
     </section>
 
     <section id="componentes-calculadora">
-
         <div class="container">
-            <div class="Componente">
-
-
+            <div class="Componente" id="CuelloDeBotella">
                 <div class="carta1">
                     <div class="img-container-calculadora"><img src="Imagenes/placadevideo.png" alt="placa de video"></div>
                     <h2>Placa de Video</h2>
-
-                    <form action="#">
+                    <form id="Gpu">
                         <label for="placa">Requerido</label>
                         <select name="Placas De Video" id="placa">
-                            <option value="Selecciona una placa">Seleccionar placa de Video...</option>
-                            <option value="Asus 1050 ti">Asus 1050 TI</option>
-                            <option value="Gigabyte 4070 super">Gigabyte 4070 Super</option>
-                            <option value="Asrock 5600 XT">Asrock 5600 XT</option>
+                            <option value="0">Seleccionar placa de Video...</option>
+                            <option value="6000">Asus 1050 TI</option>
+                            <option value="18000">Gigabyte 4070 Super</option>
+                            <option value="14000">Asrock 5600 XT</option>
                         </select>
                     </form>
                 </div>
                 <div class="carta1">
                     <div class="img-container-calculadora"><img src="Imagenes/procesador.png" alt="Procesador"></div>
                     <h2>Procesador</h2>
-                    
-                    <form action="#">
+                    <form id="Cpu">
                         <label for="procesador">Requerido</label>
                         <select name="Procesador" id="procesador">
-                            <option value="seleccione procesador">Seleccionar Procesador...</option>
-                            <option value="ryzen 5 3600">Ryzen 5 3600</option>
-                            <option value="i7 13700k">Intel I7 13700k</option>
+                            <option value="0">Seleccionar Procesador...</option>
+                            <option value="11000">Ryzen 5 3600</option>
+                            <option value="20000">Intel I7 13700k</option>
                         </select>
                     </form>
                 </div>
                 <div class="carta1">
                     <div class="img-container-calculadora"><img src="Imagenes/monitor.png" alt="Resolucion de Pantalla"></div>
                     <h2>Resolución de Pantalla</h2>
-                    
-                    <form action="#">
-                        <label for="resolucion">Requerido</label>
-                        <select  name="Resolución de Pantalla" id="resolucion">
-                            <option value="seleccione resolucion">Seleccionar Resolución de Pantalla...</option>
-                            <option value="1080p 60hz">1080p 60HZ</option>
-                            <option value="1440p 144HZ">1440p 144HZ</option>
+                    <form id="Resolucion">
+                        <label for="resolution">Requerido</label>
+                        <select name="Resolución de Pantalla" id="resolution">
+                            <option value="0">Seleccionar Resolución de Pantalla...</option>
+                            <option value="1.0">1080p 60HZ</option>
+                            <option value="1.5">1440p 144HZ</option>
                         </select>
                     </form>
                 </div>
             </div>
+
         </div>
     </section>
 
-<section id="Resultados-calculadora">
-    <div class="container">
-        <input type="submit" value="Proceder al cálculo">
-        <h2>Resultados de la Calculadora:</h2>
-    </div>
-
-
-
-
-
-
+    <section id="Resultados-calculadora">
+        <div class="container">
+            <button id="boton">Proceder con el cálculo</button>
+            <h2>Resultados de la Calculadora:</h2>
+            <div id="result"></div>
+        </div>
+    </section>
 </section>
 
-
-</section>
 <footer>
     <div class="container">
-        <p>&copy; Universidad Cátolica de Córdoba</p>
+        <p>&copy; Universidad Católica de Córdoba</p>
     </div>
 </footer>
+
+<script src="MisfuncionesJS.js"></script>
 </body>
 </html>
