@@ -355,3 +355,6 @@ input{
     color: black;
     background-color: cornflowerblue;
 }
+input:hover{
+    background-color: #2626ba;
+}
