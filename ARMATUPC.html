@@ -30,7 +30,8 @@
         <div class="container">
             <h1 class="titulo">Armá Tu PC</h1>
             <p>
-                Selecciona qué componetentes queres para tu PC. acá vas a poder visualizar tanto su precio como el consumo total de cada uno.
+                Selecciona qué componetentes queres para tu PC. acá vas a poder visualizar tanto su precio como el
+                consumo total de cada uno.
             </p>
         </div>
 
@@ -41,20 +42,21 @@
             <div class="ComponentesDeCatalogo">
 
                 <div class="carta2">
-                    <img src="Imagenes/ARMATUPC/placadevideoarmatupc.png" alt="placadevideo">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/placadevideoarmatupc.png"
+                         alt="placadevideo">
                     <h2>Placa de Video</h2>
                     <form id="GPU">
                         <label for="placa"></label>
                         <select name="Placas de Video" id="placa">
                             <option value="#">Seleccionar Placa de Video...</option>
                             <option value="#">MSI Geforce 3080</option>
-                            <option value="#">ASROCK Rx 7600  </option>
-                            <option value="#">AMD Rx 6500  </option>
+                            <option value="#">ASROCK Rx 7600</option>
+                            <option value="#">AMD Rx 6500</option>
                         </select>
                     </form>
                 </div>
                 <div class="carta2">
-                    <img src="Imagenes/ARMATUPC/procesadorarmatupc.png" alt="Procesador">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/procesadorarmatupc.png" alt="Procesador">
                     <h2>Procesador</h2>
                     <form id="CPU">
                         <label for="procesador"></label>
@@ -68,86 +70,96 @@
                     </form>
                 </div>
                 <div class="carta2">
-                    <img src="Imagenes/ARMATUPC/fuentedepoderarmatupc.png" alt="fuente de poder">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/fuentedepoderarmatupc.png"
+                         alt="fuente de poder">
                     <h2>Fuente de Alimentación</h2>
                     <form id="Fuente-Alimentacion">
                         <label for="fuentedealimentacion">
                             <select name="FuenteDeAlimentacion" id="fuentedealimentacion">
                                 <option value="#">Seleccionar Fuente de Poder...</option>
                                 <option value="#">Gigabyte 1000w P1000gm 80 Plus Gold</option>
-                                <option value="#">Msi 850w 80 Plus Gold Atx </option>
+                                <option value="#">Msi 850w 80 Plus Gold Atx</option>
                                 <option value="#">XPG Core Reactor 850 W Modular</option>
                                 <option value="#">Corsair RMx Series RM850x 850W</option>
                             </select>
                         </label>
                     </form>
                 </div>
-                <div class="carta2">
-                    <img src="Imagenes/ARMATUPC/ramarmatupc.png" alt="ram">
+            </div>
+        </div>
+    </section>
+
+
+    <section id="Catalogo2">
+        <div class="container">
+            <div class="ComponentesDeCatalogo2">
+                <div class="carta3">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/ramarmatupc.png" alt="ram">
                     <h2>Memoria RAM</h2>
                     <form id="Memoria-Ram">
                         <label for="memoriaram">
                             <select name="RAM" id="memoriaram">
                                 <option value="#">Seleccionar Memoria RAM...</option>
-                                <option value="#"></option>
-                                <option value="#"></option>
-                                <option value="#"></option>
-                                <option value="#"></option>
+                                <option value="#">Vengeance RGB Pro 16GB</option>
+                                <option value="#">Kingston Fury 64 Gb</option>
+                                <option value="#">Igame Vulcan 6GB</option>
+                                <option value="#">Hermaltake Toughram 16GB</option>
                             </select>
                         </label>
                     </form>
                 </div>
-                <div class="carta2">
-                    <h2></h2>
-
+                <div class="carta3">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/motherarmatupc.png" alt="mother">
+                    <h2>Placa Madre</h2>
+                    <form id="Placa-Mother">
+                        <label for="mother">
+                            <select name="PlacaMother" id="mother">
+                                <option value="#">Seleccionar Placa Madre...</option>
+                                <option value="#">Gigabyte Amd B450M</option>
+                                <option value="#"> Asus Prime A520M-A II</option>
+                                <option value="#">Asus Prime H510M K R2.0</option>
+                                <option value="#">Asus Prime A320m-K</option>
+                            </select>
+                        </label>
+                    </form>
                 </div>
-                <div class="carta2">
-                    <h2>
-                    </h2>
-
+                <div class="carta3">
+                    <img class="img-container-catalogo" src="Imagenes/ARMATUPC/perifericosarmatupc.png"
+                         alt="perifericos">
+                    <h2>Periféricos</h2>
+                    <form id="Periferico">
+                        <label for="periferico">
+                            <select name="ListaPerifericos" id="perifericos">
+                                <option value="#">Seleccionar Periféricos</option>
+                                <option value="#">Logitech G Series Hero G502 Negro</option>
+                                <option value="#">Razer DeathAdder Essential Negro</option>
+                            </select>
+                        </label>
+                    </form>
                 </div>
-
-
             </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
         </div>
-
-
-
-
-
-
-
-
     </section>
 
-
-
-
-
-
-
-
-
+    <section id="Calculo">
+        <div class="container">
+            <button>Calcular Consumo y Precio final</button>
+            <h2>Precio total: $</h2>
+            <h2>Consumo total [W]: </h2>
+        </div>
+    </section>
 
 </section>
-
-
-
-
-
+<footer>
+    <div class="container">
+        <p>&copy; Universidad Católica de Córdoba</p>
+    </div>
+</footer>
 
 </body>
 </html>
+
+
+
+
+

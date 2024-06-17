@@ -372,3 +372,53 @@ input:hover{
     margin: 0;
     padding: 30px;
 }
+
+#Catalogo .container{
+    padding: 150px 12px;
+    margin: auto;
+
+}
+#Catalogo .ComponentesDeCatalogo {
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    padding: 30px 12px;
+
+}
+.carta2{
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 20px;
+}
+select{
+    font-size: 2em;
+}
+
+#Catalogo .img-container-catalogo{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+}
+
+#Catalogo2 .container{
+    padding: 150px 12px;
+    margin: auto;
+
+}
+#Catalogo2 .ComponentesDeCatalogo2{
+    display: flex;
+    justify-content: space-around;
+    font-size: 10px;
+    padding: 30px 12px;
+}
+.carta3{
+    font-size: 0.95em;
+    font-weight: bold;
+    margin: 20px;
+}
+#Catalogo2 .img-container-catalogo{
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+
+}
