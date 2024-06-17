@@ -1,125 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-<meta CHARSET="UTF-8">
-<link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png">
-<header>
-    <title class="titulo"> MyPc </title>
-    <link rel="stylesheet" href="csssheet.css" type="text/css">
+<head>
+    <title>MyPC</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="Imagenes/imagenlogo.jpg" type="image/x-icon">
-</header>
-<a class="nodecoration" href="Index.html"><h1 class="h1"><img src="Imagenes/imagenlogo.jpg" width=150 alt="image" class="logo"> MyPc</h1></a>
-
-
+    <link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
+    <meta charset="utf-8"/>
+    <meta name="Autor" content="Duarte Franco"/>
+    <meta name="Autor" content="Chihadeh Lucas"/>
+    <meta name="Palabras claves" content="HTML,CSS"/>
+    <meta name="Descripción" content="Página de armado de PC"/>
+</head>
 <body>
-<b>
-    <br><br><br><br>
-    <nav class="nav">
-        <ul>
-            <label for="searchImput">
-                <input type="text" id="searchImput" placeholder="buscar...">
-            </label>
-            <button onclick="search()"><i class="fa fa-search"></i>
-            </button>
-            <a href="CATALOGO.html"> Catálogo</a>
-            <a href="ARMATUPC.html"> ArmaTuPc</a>
+<header>
+    <div class="container">
+        <a href="Index.html" class="logo">MyPC</a>
+        <nav>
+            <a href="CATALOGO.html">Catálogo</a>
+            <a href="ARMATUPC.html">Arma Tu Pc</a>
             <a href="CALCULADORA.html">Calculadora</a>
-            <a href="CARRITODECOMPRAS.html">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-        </ul>
+            <a href="CARRITODECOMPRAS.html"><i class="fa fa-shopping-cart"></i></a>
+        </nav>
+    </div>
+</header>
 
-    </nav>
-</b>
-<h2 class="titulo">Arma tu Pc <br>
-</h2>
-<p class="subtitulo">Selecciona qué componetentes queres para tu PC. acá vas a poder visualizar tanto su precio como el
-    consumo total de cada uno.
-</p>
-<ul class="opciones">
-    <div class="opcion0">
-        <img src="Imagenes/im1.jpeg" alt="image" class="img1">
-        <br>
-        <label for="Procesador"></label>
-        <select id="Procesador" name="Procesador" class="PROCESADOR">
-            <option value="Seleccionar Procesador...">Seleccionar Procesador...</option>
-            <option value="Intel">Intel</option>
-            <option value="AMD">AMD</option>
-            <option value="Ninguno">Ninguno</option>
+<section id="background">
 
-        </select>
-    </div>
-    <div class="opcion1">
-        <img src="Imagenes/im2.jpeg" alt="image" class="img2">
-        <br>
-        <label for="placavideo"></label>
-        <select id="placavideo" name="placa" class="VIDEO">
-            <option value="Seleccionar Placa de Video...">Seleccionar Placa de Video...</option>
-            <option value="Intel">NVIDIA</option>
-            <option value="AMD">AMD</option>
-            <option value="Ninguna">Ninguno</option>
-        </select>
-    </div>
-    <div class="opcion2"><img src="Imagenes/im3.jpeg" alt="image" class="img3">
-        <br>
-        <label for="fuente"></label>
-        <select id="fuente" name="fuente" class="FUENTE ">
-            <option value="Seleccionar fuente de poder...">Seleccionar fuente de poder...</option>
-            <option value="450w 80 plus">450w 80 plus</option>
-            <option value="850w 80 plus">850w 80 plus</option>
-            <option value="1000w 80 plus">1000w 80 plus</option>
-            <option value="Ninguno">Ninguna</option>
-        </select>
-    </div>
+    <section id="titulo">
+        <div class="container">
+            <h1 class="titulo">Armá Tu PC</h1>
+            <p>
+                Selecciona qué componetentes queres para tu PC. acá vas a poder visualizar tanto su precio como el consumo total de cada uno.
+            </p>
+        </div>
 
-    <div class="opcion3"><img src="Imagenes/im4.jpeg" alt="image" class="img4">
-        <br>
-        <label for="placa madre"></label>
-        <select id="placa madre" name="fuente" class="PM ">
-            <option value="Seleccionar Placa Madre...">Seleccionar Placa Madre...</option>
-            <option value="ASUS">ASUS</option>
-            <option value="MSI">MSI</option>
-            <option value="GIGABYTE">GIGABYTE</option>
-            <option value="Ninguno">Ninguna</option>
-        </select>
-    </div>
-    <div class="opcion4"><img src="Imagenes/im5.jpeg" alt="image" class="img5">
-        <br>
-        <label for="Ram"></label>
-        <select id="Ram" name="ram" class="RAM ">
-            <option value="Seleccionar Memoria RAM...">Seleccionar Memoria RAM...</option>
-            <option value="16gb 3200mh">16gb 3200mh</option>
-            <option value="32gb 3200mh">32gb 3200mh</option>
-            <option value="64gb 3200mh">64gb 3200mh</option>
-            <option value="Ninguno">Ninguno</option>
-        </select>
-    </div>
-    <div class="opcion5"><img src="Imagenes/im6.jpeg" alt="image" class="img6">
-        <br>
-        <label for="perifericos"></label>
-        <select id="perifericos" name="perifericos" class="PERIFERICOS ">
-            <option value="Seleccionar perifericos...">Seleccionar Perifericos...</option>
-            <option value="Teclado">Teclado</option>
-            <option value="Mouse">Mouse</option>
-            <option value="Microfono">Microfono</option>
-            <option value="Scaner">Scaner</option>
-            <option value="Camara">Camara</option>
-            <option value="Ninguno">Ninguno</option>
-        </select>
-    </div>
+    </section>
 
-</ul>
-<br>
-<th class="calculo">
-    <button onclick="search ()" class="boton">Calcular</button>
-    <div class="cuadro">
-        <p class="resultado2">
-            Precio Total:
-        </p>
-        <p class="resultado3">
-            Consumo Total [W]:
-        </p>
-    </div>
-</th>
+    <section id="Catalogo">
+        <div class="container">
+            <div class="ComponentesDeCatalogo">
+
+                <div class="carta2">
+                    <img src="Imagenes/ARMATUPC/placadevideoarmatupc.png" alt="placadevideo">
+                    <h2>Placa de Video</h2>
+                    <form id="GPU">
+                        <label for="placa"></label>
+                        <select name="Placas de Video" id="placa">
+                            <option value="#">Seleccionar Placa de Video...</option>
+                            <option value="#">MSI Geforce 3080</option>
+                            <option value="#">ASROCK Rx 7600  </option>
+                            <option value="#">AMD Rx 6500  </option>
+                        </select>
+                    </form>
+                </div>
+                <div class="carta2">
+                    <img src="Imagenes/ARMATUPC/procesadorarmatupc.png" alt="Procesador">
+                    <h2>Procesador</h2>
+                    <form id="CPU">
+                        <label for="procesador"></label>
+                        <select name="Procesador" id="procesador">
+                            <option value="#">Seleccionar Procesador...</option>
+                            <option value="#">Intel Core i3-10105F</option>
+                            <option value="#">AMD Ryzen 3 3200G</option>
+                            <option value="#">Pentium Gold G7400</option>
+                            <option value="#">Intel Core I5 12400</option>
+                        </select>
+                    </form>
+                </div>
+                <div class="carta2">
+                    <img src="Imagenes/ARMATUPC/fuentedepoderarmatupc.png" alt="fuente de poder">
+                    <h2>Fuente de Alimentación</h2>
+                    <form id="Fuente-Alimentacion">
+                        <label for="fuentedealimentacion">
+                            <select name="FuenteDeAlimentacion" id="fuentedealimentacion">
+                                <option value="#">Seleccionar Fuente de Poder...</option>
+                                <option value="#">Gigabyte 1000w P1000gm 80 Plus Gold</option>
+                                <option value="#">Msi 850w 80 Plus Gold Atx </option>
+                                <option value="#">XPG Core Reactor 850 W Modular</option>
+                                <option value="#">Corsair RMx Series RM850x 850W</option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+                <div class="carta2">
+                    <img src="Imagenes/ARMATUPC/ramarmatupc.png" alt="ram">
+                    <h2>Memoria RAM</h2>
+                    <form id="Memoria-Ram">
+                        <label for="memoriaram">
+                            <select name="RAM" id="memoriaram">
+                                <option value="#">Seleccionar Memoria RAM...</option>
+                                <option value="#"></option>
+                                <option value="#"></option>
+                                <option value="#"></option>
+                                <option value="#"></option>
+                            </select>
+                        </label>
+                    </form>
+                </div>
+                <div class="carta2">
+                    <h2></h2>
+
+                </div>
+                <div class="carta2">
+                    <h2>
+                    </h2>
+
+                </div>
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+
+
+
+
+
+
+
+    </section>
+
+
+
+
+
+
+
+
+
+
+</section>
+
+
+
+
+
+
 </body>
 </html>
