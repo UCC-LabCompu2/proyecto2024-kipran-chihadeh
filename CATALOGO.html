@@ -1,74 +1,177 @@
 <!DOCTYPE html>
-<html lang="en">
-<meta charset="utf-8"/>
-<header>
-    <title class="titulo"> MyPc </title>
-    <link rel="stylesheet" href="csssheet.css" type="text/css">
+<html lang="es">
+<head>
+    <title>MyPC</title>
+    <link rel="stylesheet" href="stylesheet.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="shortcut icon" href="Imagenes/imagenlogo.jpg" type="image/x-icon">
-</header>
-<a class="nodecoration" href="Index.html"><h1 class="h1"><img src="Imagenes/imagenlogo.jpg" width=150 alt="image" class="logo"> MyPc</h1></a>
+    <link rel="shortcut icon" href="Imagenes/Favicon.png" type="R.png"/>
+    <meta charset="utf-8"/>
+    <meta name="Autor" content="Duarte Franco"/>
+    <meta name="Autor" content="Chihadeh Lucas"/>
+    <meta name="Palabras claves" content="HTML,CSS"/>
+    <meta name="Descripción" content="Página de armado de PC"/>
+</head>
 <body>
-<b>
-    <br><br><br><br>
-    <nav class="nav">
-        <ul>
-            <label for="searchImput">
-                <input type="text" id="searchImput" placeholder="buscar...">
-            </label>
-            <button onclick="search()"><i class="fa fa-search"></i>
-            </button>
-            <a href="#">Catálogo</a>
-            <a href="ARMATUPC.html"> Arma Tu Pc</a>
+<header>
+    <div class="container">
+        <a href="Index.html" class="logo">MyPC</a>
+        <nav>
+            <a href="CATALOGO.html">Catálogo</a>
+            <a href="ARMATUPC.html">Arma Tu Pc</a>
             <a href="CALCULADORA.html">Calculadora</a>
-            <a href="CARRITODECOMPRAS.html">
-                <i class="fa fa-shopping-cart"></i>
-            </a>
-        </ul>
+            <a href="CARRITODECOMPRAS.html"><i class="fa fa-shopping-cart"></i></a>
+        </nav>
+    </div>
+</header>
 
-    </nav>
-</b>
-<br><br>
-<h3 class="T"> Investiga nuestro catalogo de componentes para tu PC</h3>
-<div class="catalogo">
-    <hr>
-    <h4 class="P">Procesadores</h4>
-    <div class="publi1">
-        <h4 class="d1">Procesador Intel Core I9 12900F  5,1Hz 12° Generación <img class="p1" src="Imagenes/procesador1.jpg" alt="image"> </h4><br>
-        <h3 class=" precio1"> $600.000</h3>
-        <br>
-        <button onclick="search()" class="boton2">Comprar</button>
-    </div>
-    <br>
-    <div class="publi1">
-        <h4 class="d1">Procesador Intel Core I3 12100F 12° 4,43Hz Generacion <img class="p2" src="Imagenes/procesador2.jpg" alt="image"> </h4><br>
-        <h3 class=" precio1"> $152.000</h3>
-        <br>
-        <button onclick="search()" class="boton2">Comprar</button>
-    </div>
-    <br>
-    <div class="publi1">
-        <h4 class="d1">Procesador AMD Ryzen 7 5700G 4,6Hz <img class="p2" src="Imagenes/procesador3.jpg" alt="image"> </h4><br>
-        <h3 class=" precio1"> $152.000</h3>
-        <br>
-        <button onclick="search()" class="boton2">Comprar</button>
-    </div>
-    <h4 class="P">Placas de Video</h4>
-    <div class="publi1">
-        <h4 class="d1">Placa de Video RTX 3060  <img class="p2" src="Imagenes/placa1.jpg" alt="image"> </h4>
-        <br>
-        <h3 class=" precio1"> $350.000</h3>
-        <br>
-        <button onclick="search()" class="boton2">Comprar</button>
-    </div>
-    <br>
-    <div class="publi1">
-        <h4 class="d1">Placa de Video GTX 1650 4Gb   <img class="p2" src="Imagenes/placa2.jpg" alt="image"> </h4><br>
-        <h3 class=" precio1"> $160.000</h3>
-        <br>
-        <button onclick="search()" class="boton2">Comprar</button>
-    </div>
-    <br>
-</div>
-</body>
-</html>
+
+<section id="background">
+
+    <section id="titulo">
+        <div class="container">
+            <h1>Investigá nuestro Catálogo de componentes para tu PC</h1>
+        </div>
+    </section>
+
+    <section id="Catalogo3">
+
+        <div class="container">
+
+
+            <div class="Productos">
+                <div class="Procesadores">
+                    <h2 id="procesadores">PROCESADORES</h2>
+                    <ul>
+                        <li>Procesador Intel Core i9 13900KF 5.8GHz Turbo Socket 1700 Raptor Lake// PRECIO: $ 743.520
+                            <div><img src="Imagenes/CATALOGO2/proce1.jpg" alt="proce1"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Procesador AMD Ryzen 9 7950X 5.7GHz AM5// PRECIO: $755.000
+                            <div><img src="Imagenes/CATALOGO2/proce2.jpg" alt="proce2"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                            <li>Procesador AMD Ryzen 5 5600X 4.6GHz Turbo AM4//Precio: $ 230.000
+                                <div><img src="Imagenes/CATALOGO2/proce3.jpg" alt="proce3"></div>
+                                <button>Añadir al carrito</button>
+                            </li>
+                            <li>Procesador Intel Core i7 12700 4.9GHz Turbo Socket 1700 Alder Lake// PRECIO: $ 392.900
+                                <div><img src="Imagenes/CATALOGO2/proce4.jpg" alt="proce4"></div>
+                                <button>Añadir al carrito</button>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="Placas de Video">
+                    <h2 id="placasvideo">PLACAS DE VIDEO</h2>
+                    <ul>
+                        <li>Placa de Video Asrock Radeon RX 6800 XT 16GB GDDR6 Phantom Gaming// Precio: $ 680.410
+                            <div><img src="Imagenes/CATALOGO2/placa1.jpg" alt="placa1"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Placa de Video ASUS GeForce GT 730 2GB GDDR5// Precio: $ 83.290
+                            <div><img src="Imagenes/CATALOGO2/placa2.jpg" alt="placa2"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                            <li>Placa de Video MSI GeForce RTX 4090 24GB GDDR6X GAMING X TRIO// Precio: $ 2.544.700
+                                <div><img src="Imagenes/CATALOGO2/placa3.jpg" alt="placa3"></div>
+                                <button>Añadir al carrito</button>
+                            </li>
+                            <li>Placa de Video XFX Radeon RX 7900 XTX 24GB GDDR6 SPEEDSTER MERC 310// Precio: $ 1.399.950
+                                <div><img src="Imagenes/CATALOGO2/placa4.jpg" alt="placa4"></div>
+                                <button>Añadir al carrito</button>
+                            </li>
+                    </ul>
+                </div>
+
+                <div class="Fuentes de Poder">
+                    <h2 id="fuentepoder">FUENTES DE PODER</h2>
+                    <ul>
+                        <li>Fuente ASUS ROG THOR 2 1200W 80 Plus Platinum II 1200P Full Modular// Precio: $ 525.950
+                            <div><img src="Imagenes/CATALOGO2/fuente1.jpg" alt="fuente1"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Fuente Cooler Master 750W 80 Plus Gold SFX Mini ITX// Precio: $ 241.100
+                            <div><img src="Imagenes/CATALOGO2/fuente2.jpg" alt="fuente2"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Fuente Overtech 600W GX-6600// Precio: $ 19.750
+                            <div><img src="Imagenes/CATALOGO2/fuente3.jpg" alt="fuente3"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Fuente Aerocool Cylon 500W Full Range RGB 80 Plus Bronze// Precio: $ 70.000
+                            <div><img src="Imagenes/CATALOGO2/fuente4.jpg" alt="fuente4"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+
+                    </ul>
+                </div>
+                <div class="Memorias ram">
+                    <h2 id="memoriaram">MEMORIAS RAM</h2>
+                    <ul>
+                        <li>Memoria Team DDR5 32GB (2x16GB) 8000MHz T-Force XTREEM CL38 Narvik Black Intel XMP 3.0// Precio: $ 269.970
+                            <div><img src="Imagenes/CATALOGO2/ram1.jpg" alt="ram1"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Memoria Team DDR5 64GB (2x32GB) 6000Mhz T-CREATE EXPERT CL34 Black Intel XMP 3.0 / AMD EXPO// Precio: $ 275.620
+                            <div><img src="Imagenes/CATALOGO2/ram2.jpg" alt="ram2"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Memoria Corsair DDR4 8GB 3200Mhz Vengeance LPX Black CL16// Precio: $ 29.150
+                            <div><img src="Imagenes/CATALOGO2/ram3.jpg" alt="ram3"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Memoria Team DDR4 8GB 3200MHz T-Force Vulcan Z Grey CL16// Precio:  $ 27.630
+                            <div><img src="Imagenes/CATALOGO2/ram4.jpg" alt="ram4"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Placas Madres">
+                    <h2 id="mother">PLACAS MADRES</h2>
+                    <ul>
+                        <li>Mother ASUS PRIME A320M-K AM4// Precio: $ 77.800
+                            <div><img src="Imagenes/CATALOGO2/mother1.jpg" alt="mother1"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Mother Asrock A520M-HDV AM4// Precio: $ 77.300
+                            <div><img src="Imagenes/CATALOGO2/mother2.jpg" alt="mother2"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Mother ASUS ROG CROSSHAIR X670E HERO// Precio: $ 780.260
+                            <div><img src="Imagenes/CATALOGO2/mother3.jpg" alt="mother3"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                        <li>Mother Asrock X670E Taichi Carrara AM5// Precio: $ 895.400
+                            <div><img src="Imagenes/CATALOGO2/mother4.jpg" alt="mother4"></div>
+                            <button>Añadir al carrito</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="Perifericos">
+                    <h2 id="perifericos">PERIFERICOS</h2>
+                    <ul>
+                       <li>Webcam Hyperx Vision S 4K 30FPS// 1080P 60FPS// Precio: $ 319.190
+                           <div><img src="Imagenes/CATALOGO2/periferico1.jpg" alt="periferico1"></div>
+                           <button>Añadir al carrito</button>
+                       </li>
+                       <li>Combo Redragon S129 3 en 1 Teclado K630 + Mouse M607 White + Auriculares H350 RGB White// Precio: $ 89.600
+                           <div><img src="Imagenes/CATALOGO2/periferico2.jpg" alt="periferico2"></div>
+                           <button>Añadir al carrito</button>
+                       </li>
+                       <li>Mouse ASUS ROG Strix Harpe P713 Bluetooth Wireless Ace Aim Lab Edition 36.000DPI// Precio: $ 206.000
+                           <div><img src="Imagenes/CATALOGO2/periferico3.jpg" alt="periferico3"></div>
+                           <button>Añadir al carrito</button>
+                       </li>
+                       <li>Auriculares Logitech Astro A50 X Wireless Lighstpeed Black// Precio: $ 589.990
+                           <div><img src="Imagenes/CATALOGO2/periferico4.jpg" alt="periferico4"></div>
+                           <button>Añadir al carrito</button>
+                       </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+
+</section>

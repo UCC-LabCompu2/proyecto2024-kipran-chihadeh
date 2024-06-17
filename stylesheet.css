@@ -422,3 +422,25 @@ select{
     justify-content: center;
 
 }
+
+#Catalogo3 .container{
+    padding: 150px 12px;
+    margin: auto;
+
+
+}
+ul{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    display: block;
+}
+ul li{
+
+    border: 3px solid cadetblue;
+    border-radius: 15px;
+    padding: 30px;
+    margin: 20px;
+    width: 800px;
+    text-align: center;
+}
