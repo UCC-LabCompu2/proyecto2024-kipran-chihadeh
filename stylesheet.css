@@ -289,48 +289,54 @@ footer .container {
     color: white;
 
 }
-#titulo h1{
+
+#titulo h1 {
 
     font-size: 4.5em;
 
 }
-#titulo p{
+
+#titulo p {
 
     padding-bottom: 40px;
     font-size: 2em;
 
 }
-#componentes-calculadora .container{
+
+#componentes-calculadora .container {
 
     padding: 150px 12px;
     margin: auto;
 
 }
-#componentes-calculadora .Componente{
+
+#componentes-calculadora .Componente {
     display: flex;
     justify-content: space-between;
 
 }
-#componentes-calculadora{
+
+#componentes-calculadora {
     color: white;
     font-size: 15px;
 
 }
 
-#componentes-calculadora .img-container-calculadora{
+#componentes-calculadora .img-container-calculadora {
     height: 25vh;
     display: flex;
     justify-content: center;
     padding: 30px;
 }
-label{
+
+label {
 
     font-weight: bold;
     font-size: 1em;
     color: #f64242;
 }
 
-select{
+select {
     font-size: 0.75em;
     font-weight: bold;
     padding: 5px 10px;
@@ -340,13 +346,15 @@ select{
     color: black;
     background-color: cornflowerblue;
 }
-h2{
+
+h2 {
     font-weight: bold;
     color: white;
     font-size: 3em;
     margin-bottom: 0;
 }
-input{
+
+input {
     font-size: 1.5em;
     font-weight: bold;
     padding: 20px 30px;
@@ -356,11 +364,13 @@ input{
     color: black;
     background-color: cornflowerblue;
 }
-input:hover{
+
+input:hover {
     background-color: #2626ba;
 }
-#result{
-    margin:0;
+
+#result {
+    margin: 0;
     color: white;
     font-size: 1.25em;
     font-weight: bold;
@@ -368,16 +378,18 @@ input:hover{
     justify-content: flex-end;
 
 }
-#result p{
+
+#result p {
     margin: 0;
     padding: 30px;
 }
 
-#Catalogo .container{
+#Catalogo .container {
     padding: 150px 12px;
     margin: auto;
 
 }
+
 #Catalogo .ComponentesDeCatalogo {
     display: flex;
     justify-content: space-around;
@@ -385,57 +397,64 @@ input:hover{
     padding: 30px 12px;
 
 }
-.carta2{
+
+.carta2 {
     font-size: 0.95em;
     font-weight: bold;
     margin: 20px;
 }
-select{
+
+select {
     font-size: 2em;
 }
 
-#Catalogo .img-container-catalogo{
+#Catalogo .img-container-catalogo {
     height: 25vh;
     display: flex;
     justify-content: center;
 }
 
-#Catalogo2 .container{
+#Catalogo2 .container {
     padding: 150px 12px;
     margin: auto;
 
 }
-#Catalogo2 .ComponentesDeCatalogo2{
+
+#Catalogo2 .ComponentesDeCatalogo2 {
     display: flex;
     justify-content: space-around;
     font-size: 10px;
     padding: 30px 12px;
 }
-.carta3{
+
+.carta3 {
     font-size: 0.95em;
     font-weight: bold;
     margin: 20px;
 }
-#Catalogo2 .img-container-catalogo{
+
+#Catalogo2 .img-container-catalogo {
     height: 25vh;
     display: flex;
     justify-content: center;
 
 }
 
-#Catalogo3 .container{
+#Catalogo3 .container {
     padding: 150px 12px;
     margin: auto;
 
 
 }
-ul{
+
+ul {
     font-size: 1.5em;
     font-weight: bold;
     color: white;
     display: block;
 }
-ul li{
+
+ul li {
 
     border: 3px solid cadetblue;
     border-radius: 15px;
@@ -444,19 +463,26 @@ ul li{
     width: 800px;
     text-align: center;
 }
-.carrito{
-    font-size: 2em;
-    font-family: 'Roboto', sans-serif;
-    color: white;
-}
-.b1{
-    margin-bottom: max(500px);
-    margin-right: auto;
-    border-radius: 100px;
-    margin-top: 30px;
+#compra{
+    text-align: center;
+    justify-content: center;
+    content-visibility: auto;
+
 
 }
-.total{
-    font-size: 2em;
+.carrito{
+    font-size: 1.5em;
+    font-family: 'Roboto', sans-serif;
     color: white;
+    text-align: center;
+}
+.total{
+    font-size: 1.5em;
+    color: white;
+    margin-top: 20px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+#compra button{
+    margin-bottom: 20px;
 }
