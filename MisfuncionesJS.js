@@ -73,7 +73,7 @@ function mostrar() {
         });
 
     }
-    document.getElementById('total').textContent = total.toFixed(3);
+    document.getElementById('total').textContent = total.toFixed(0);
 }
 
 function deshacerCompra() {
