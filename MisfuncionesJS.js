@@ -1,3 +1,91 @@
+document.addEventListener('DOMContentLoaded', function () {
+    const seleccion = document.querySelectorAll('.select');
+    const precioTotal = document.getElementById('total');
+    const consumoTotal = document.getElementById('consumo');
+    const calculo = document.getElementById('calcular');
+
+    function Actualizar() {
+        let total = 0;
+        let consumo = 0;
+        let fuente = 0;
+
+        seleccion.forEach(select => {
+            const opcion = select.options[select.selectedIndex];
+            total += parseFloat(opcion.getAttribute('data-precio')) || 0;
+            consumo += parseFloat(opcion.getAttribute('data-consumo')) || 0;
+            if (select.id === 'fuentedealimentacion') {
+                fuente = parseFloat(opcion.getAttribute('data-capacidad')) || 0;
+            }
+        });
+
+        consumoTotal.textContent = consumo.toFixed(2);
+        precioTotal.textContent = total.toFixed(2);
+
+        if (fuente > 0 && consumo > fuente) {
+            alert("La fuente de alimentación seleccionada no es suficiente para el consumo total.");
+        }
+    }
+
+
+    if (calculo) {
+        calculo.addEventListener('click', Actualizar);
+    }
+
+    Actualizar();
+});
+
+
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+function agregarCarrito(elemento) {
+    const producto = elemento.parentElement;
+    const id = producto.getAttribute('data-id');
+    const precio = producto.getAttribute('data-precio');
+    const nombre = producto.getAttribute('data-nombre');
+    const item = { id, nombre, precio };
+    carrito.push(item);
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert(`${nombre} se agregó al carrito`);
+    mostrar();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const carroguardado = localStorage.getItem("carrito");
+    if (carroguardado) {
+        carrito = JSON.parse(carroguardado);
+    }
+    mostrar();
+});
+
+function mostrar() {
+    const carritoDiv = document.querySelector(".carrito");
+    carritoDiv.innerHTML = '';
+    if (carrito.length === 0) {
+        carritoDiv.innerHTML = '<p>El carrito está vacío.</p>';
+    } else {
+        carrito.forEach(item => {
+            const productoDiv = document.createElement('div');
+            productoDiv.classList.add('producto');
+            productoDiv.innerHTML = `<span>${item.nombre} - $${item.precio}</span>`;
+            carritoDiv.appendChild(productoDiv);
+        });
+    }
+}
+
+function deshacerCompra() {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+}
+
+function comprado() {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+    alert("Los productos se compraron correctamente");
+}
+
+
 function calcularCuelloDeBotella(GPU, CPU, RESOLUCION) {
     const puntajeCPU = CPU / RESOLUCION;
     const puntajeGPU = GPU;
@@ -35,3 +123,6 @@ document.getElementById("boton").addEventListener("click", function(event) {
         <p>Diferencia porcentual: ${result.diferencia}%</p>
     `;
 });
+
+
+

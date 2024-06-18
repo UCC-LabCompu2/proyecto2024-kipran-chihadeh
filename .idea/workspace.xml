@@ -5,12 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bdbb0c2b-5786-4db2-bb70-ee65edcb232b" name="Changes" comment="implementacion de JavaScript">
-      <change afterPath="$PROJECT_DIR$/MisfuncionesJS.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_18_44__Changes_.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_18_5_2024_18_44__Changes_.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/CALCULADORA.html" beforeDir="false" afterPath="$PROJECT_DIR$/CALCULADORA.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Mis funciones JS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ARMATUPC.html" beforeDir="false" afterPath="$PROJECT_DIR$/ARMATUPC.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CARRITODECOMPRAS.html" beforeDir="false" afterPath="$PROJECT_DIR$/CARRITODECOMPRAS.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/CATALOGO.html" beforeDir="false" afterPath="$PROJECT_DIR$/CATALOGO.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MisfuncionesJS.js" beforeDir="false" afterPath="$PROJECT_DIR$/MisfuncionesJS.js" afterDir="false" />
     </list>
     <list id="15099afe-4e38-4d52-bbb6-7d37362dd9e4" name="Changes by frank" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,6 +55,7 @@
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;JavaScript Debug.CATALOGO.html.executor&quot;: &quot;Debug&quot;,
     &quot;JavaScript Debug.pagina4.html.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
@@ -115,6 +116,9 @@
       <workItem from="1718485289576" duration="1793000" />
       <workItem from="1718570847639" duration="2055000" />
       <workItem from="1718573504225" duration="4951000" />
+      <workItem from="1718644016664" duration="4803000" />
+      <workItem from="1718658689191" duration="3459000" />
+      <workItem from="1718719107856" duration="1619000" />
     </task>
     <task id="LOCAL-00001" summary=".">
       <option name="closed" value="true" />
