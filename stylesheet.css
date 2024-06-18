@@ -444,3 +444,19 @@ ul li{
     width: 800px;
     text-align: center;
 }
+.carrito{
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+.b1{
+    margin-bottom: max(500px);
+    margin-right: auto;
+    border-radius: 100px;
+    margin-top: 30px;
+
+}
+.total{
+    font-size: 2em;
+    color: white;
+}

@@ -60,6 +60,7 @@ document.addEventListener('DOMContentLoaded', () => {
 function mostrar() {
     const carritoDiv = document.querySelector(".carrito");
     carritoDiv.innerHTML = '';
+    let total=0
     if (carrito.length === 0) {
         carritoDiv.innerHTML = '<p>El carrito está vacío.</p>';
     } else {
@@ -68,8 +69,11 @@ function mostrar() {
             productoDiv.classList.add('producto');
             productoDiv.innerHTML = `<span>${item.nombre} - $${item.precio}</span>`;
             carritoDiv.appendChild(productoDiv);
+            total += parseFloat(item.precio);
         });
+
     }
+    document.getElementById('total').textContent = total.toFixed(3);
 }
 
 function deshacerCompra() {
