@@ -1,9 +1,9 @@
 # **MyPC** 
 
--[Funcionamiento de la Página](#Funcionamiento_de_la_Página]
--[Tecnologías Usadas](#Tecnologías_usadas]
--[Link Github Pages][#Link_gh_pages]
--[Autores](#Autores)
+- [Funcionamiento de la Página](#Funcionamiento_de_la_Página]
+- [Tecnologías Usadas](#Tecnologías_usadas]
+- [Link Github Pages][#Link_gh_pages]
+- [Autores](#Autores)
 
 *MyPC es una página cuya finalidad es permitir al usuario armar su propia computadora, comprobar la compatibilidad entre distintos componentes y revisar tanto el precio como el consumo electrico de los mismos en un solo sitio web.*
 
