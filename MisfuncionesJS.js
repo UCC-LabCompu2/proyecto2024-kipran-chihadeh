@@ -4,7 +4,7 @@
  * @param= {number} valor- valor del consumo de los componentes
  * @return = suma de los precios y consumos seleccionados
  */
-const seleccion = document.getElementsByClassName('select');
+const seleccionar = document.getElementsByClassName('select');
 const preciototal = document.getElementById('total');
 const consumototal = document.getElementById('consumo');
 
@@ -13,9 +13,9 @@ const Actualizar = () => {
     let consumo = 0;
     let fuente = 0;
 
-    for (let i = 0; i < seleccion.length; i++) {
+    for (let i = 0; i < seleccionar.length; i++) {
 
-        const select = seleccion[i];
+        const select = seleccionar[i];
         const opcion = select.options[select.selectedIndex];
 
         if (opcion) {
@@ -74,7 +74,7 @@ const componentes = () => {
 
     const result = calcularCuelloDeBotella(GPU, CPU, RESOLUCION);
 
-    document.getElementById("result").innerHTML = `
+    document.getElementById("result").textContent = `
         <p>Cuello de botella principal: ${result.cuelloDeBotella}</p>
         <p>Puntaje ajustado de CPU: ${result.CPU}</p>
         <p>Puntaje ajustado de GPU: ${result.GPU}</p>
@@ -83,3 +83,76 @@ const componentes = () => {
 };
 
 Actualizar();
+/**
+ * Función para agregar un producto al carrito.
+ * @param= {number} valor- precio del producto.
+ * @param= {string}- nombre del producto.
+ * @param={number}- id del producto
+ */
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+const agregarCarrito = (elemento) => {
+    const producto = elemento.parentElement;
+    const id = producto.getAttribute('data-id');
+    const nombre = producto.getAttribute('data-nombre');
+    const precio = parseFloat(producto.getAttribute('data-precio'));
+
+    const index = carrito.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+        carrito[index].cantidad += 1;
+    } else {
+        carrito.push({id, nombre, precio, cantidad: 1});
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert(`${nombre} se agregó al carrito correctamente`);
+    mostrar();
+
+};
+/**
+ * Función para mostrar los productos en el carrito.
+ */
+const mostrar = () => {
+    const carritodiv = document.getElementsByClassName("carrito")[0];
+    const elementos = document.getElementById('total');
+
+    if (!carritodiv || !elementos) {
+        console.error('Elemento .carrito o elementos no encontrado');
+        return;
+    }
+
+    let total = 0;
+    let html = '';
+
+    carrito.forEach(item => {
+        const subtotal = item.precio * item.cantidad;
+        html += `<li class="producto"><span>${item.nombre} - $${item.precio.toFixed(2)} x ${item.cantidad} = $${subtotal.toFixed(2)}</span></li>`;
+        total += subtotal;
+    });
+    carritodiv.innerHTML = '<ul>${html}</ul>'
+    elementos.textContent = total.toFixed(2);
+
+};
+/**
+ * Función para vaciar los productos en el carrito.
+ */
+
+const deshacerCompra = () => {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+    alert("Se ha vaciado el carrito.");
+};
+/**
+ * Función para completar la compra de los productos.
+ */
+
+const comprado = () => {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+    alert("Los productos se compraron correctamente.");
+};
+
+mostrar();
