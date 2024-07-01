@@ -1,3 +1,7 @@
+/**
+ * @method actualizar
+ * @description Actualiza el precio total y consumo de productos seleccionados, y verifica la capacidad de una fuente de alimentación.
+ */
 const actualizar = () => {
     const seleccionar = document.getElementsByClassName('select');
     const preciototal = document.getElementById('total');
@@ -31,6 +35,11 @@ const actualizar = () => {
     animacion(total);
 };
 
+/**
+ * @method animacion
+ * @description Realiza una animación de incremento en un canvas, mostrando el precio total animado.
+ * @param {number} preciototal - El precio total a animar.
+ */
 const animacion = (preciototal) => {
     const canvas = document.getElementById('myCanvas');
     const ctx = canvas.getContext('2d');
@@ -54,6 +63,15 @@ const animacion = (preciototal) => {
 
     Animado(preciototal);
 };
+
+/**
+ * @method calcularCuelloDeBotella
+ * @description Calcula el cuello de botella entre CPU y GPU dado su puntaje y resolución.
+ * @param {number} GPU - Puntaje de la GPU.
+ * @param {number} CPU - Puntaje de la CPU.
+ * @param {number} RESOLUCION - Resolución utilizada para ajuste del puntaje.
+ * @returns {Object} Objeto con información sobre el cuello de botella.
+ */
 const calcularCuelloDeBotella = (GPU, CPU, RESOLUCION) => {
     const MediaDeseada = 25;
     const puntajeCPU = CPU / RESOLUCION;
@@ -77,6 +95,10 @@ const calcularCuelloDeBotella = (GPU, CPU, RESOLUCION) => {
     };
 };
 
+/**
+ * @method Boton
+ * @description Calcula y muestra el cuello de botella principal entre CPU y GPU según los valores ingresados.
+ */
 const Boton = () => {
     const CPU = parseFloat(document.getElementById("procesador").value) || 0;
     const GPU = parseFloat(document.getElementById("placa").value) || 0;
@@ -92,4 +114,72 @@ const Boton = () => {
             `;
 };
 
-    Boton();
+/**
+ * @method agregarCarrito
+ * @description Agrega un producto al carrito de compras y guarda en localStorage.
+ * @param {HTMLElement} elemento - Elemento HTML que representa el producto a agregar.
+ */
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+function agregarCarrito(elemento) {
+    const producto = elemento.parentElement;
+    const id = producto.getAttribute('data-id');
+    const nombre = producto.getAttribute('data-nombre');
+    const precio = parseFloat(producto.getAttribute('data-precio'));
+
+    const index = carrito.findIndex(item => item.id === id);
+
+    if (index !== -1) {
+        carrito[index].cantidad += 1;
+    } else {
+        carrito.push({id, nombre, precio, cantidad: 1});
+    }
+
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+    alert(`${nombre} se agregó al carrito correctamente`);
+}
+
+/**
+ * @method mostrar
+ * @description Muestra los productos actuales en el carrito y calcula el total.
+ */
+const mostrar = () => {
+    const carritodiv = document.getElementsByClassName("carrito")[0];
+    let total = 0;
+    let html = '';
+
+    if (carrito.length === 0) {
+        carritodiv.innerHTML = `<p>El Carrito está Vacío</p>`;
+    } else {
+        carrito.forEach(item => {
+            const subtotal = item.precio * item.cantidad;
+            html += `<div class="producto"><span>${item.nombre} - $${item.precio.toFixed(2)} x ${item.cantidad}</span></div>`;
+            total += subtotal;
+        });
+        carritodiv.innerHTML = html;
+    }
+
+    document.getElementById('total').textContent = total.toFixed(2);
+};
+
+/**
+ * @method deshacerCompra
+ * @description Vacía el carrito de compras y elimina los datos de localStorage.
+ */
+const deshacerCompra = () => {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+    alert("Se ha vaciado el carrito.");
+};
+
+/**
+ * @method comprado
+ * @description Marca los productos como comprados, vaciando el carrito y eliminando los datos de localStorage.
+ */
+const comprado = () => {
+    localStorage.removeItem('carrito');
+    carrito = [];
+    mostrar();
+    alert("Los productos se compraron correctamente.");
+};
+mostrar();
