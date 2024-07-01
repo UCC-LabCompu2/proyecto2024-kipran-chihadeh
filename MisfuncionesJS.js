@@ -1,51 +1,61 @@
-/**
- *@method = Actualizar
- * @param ={number} valor- valor del precio de los componentes
- * @param = {number} valor- valor del consumo de los componentes
- * @return = suma de los precios y consumos seleccionados
- */
-const seleccion = document.getElementsByClassName('select');
-const preciototal = document.getElementById('total');
-const consumototal = document.getElementById('consumo');
+const actualizar = () => {
+    const seleccionar = document.getElementsByClassName('select');
+    const preciototal = document.getElementById('total');
+    const consumototal = document.getElementById('consumo');
 
-const Actualizar = () => {
     let total = 0;
     let consumo = 0;
     let fuente = 0;
 
-    for (let i = 0; i < seleccion.length; i++) {
-
-        const select = seleccion[i];
+    for (let i = 0; i < seleccionar.length; i++) {
+        const select = seleccionar[i];
         const opcion = select.options[select.selectedIndex];
 
         if (opcion) {
-
             total += parseFloat(opcion.getAttribute('data-precio')) || 0;
             consumo += parseFloat(opcion.getAttribute('data-consumo')) || 0;
-            if (select.id === 'fuentedealimentacion') {
 
+            if (select.id === 'fuentedealimentacion') {
                 fuente = parseFloat(opcion.getAttribute('data-capacidad')) || 0;
             }
-
         }
-
     }
+
     if (preciototal) preciototal.textContent = total.toFixed(2);
     if (consumototal) consumototal.textContent = consumo.toFixed(2);
+
     if (fuente > 0 && fuente < consumo) {
-        alert('La fuente ingresada no es suficiente para la seleccion deseada');
+        alert('La fuente ingresada no es suficiente para la selección deseada');
     }
+
+    animacion(total);
 };
 
-/**
- *@method = calcularCuelloDeBotella
- * @param ={number} valor- puntaje de rendimiento del CPU
- * @param= {number} valor- puntaje de rendimiento de la GPU
- * @param= {number} valor- tipo de resolucion que se desea
- * @return = diferencia porcentual entre el CPU y GPU, para saber el cuello de botella, y que componente lo genera
- */
-const MediaDeseada = 25
+const animacion = (preciototal) => {
+    const canvas = document.getElementById('myCanvas');
+    const ctx = canvas.getContext('2d');
+
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.font = "50px Arial";
+    ctx.fillStyle = "#fff";
+
+    let precio = 0;
+    let increment = preciototal / 100;
+
+    const Animado = () => {
+        ctx.clearRect(0, 0, canvas.width, canvas.height);
+        ctx.fillText(precio.toFixed(2), 50, 100);
+
+        if (precio < preciototal) {
+            precio += increment;
+            requestAnimationFrame(Animado);
+        }
+    };
+
+    Animado(preciototal);
+};
 const calcularCuelloDeBotella = (GPU, CPU, RESOLUCION) => {
+    const MediaDeseada = 25;
     const puntajeCPU = CPU / RESOLUCION;
     const puntajeGPU = GPU;
     const dif = Math.abs(puntajeCPU - puntajeGPU);
@@ -67,7 +77,7 @@ const calcularCuelloDeBotella = (GPU, CPU, RESOLUCION) => {
     };
 };
 
-const componentes = () => {
+const Boton = () => {
     const CPU = parseFloat(document.getElementById("procesador").value) || 0;
     const GPU = parseFloat(document.getElementById("placa").value) || 0;
     const RESOLUCION = parseFloat(document.getElementById("resolution").value) || 1;
@@ -75,60 +85,11 @@ const componentes = () => {
     const result = calcularCuelloDeBotella(GPU, CPU, RESOLUCION);
 
     document.getElementById("result").innerHTML = `
-        <p>Cuello de botella principal: ${result.cuelloDeBotella}</p>
-        <p>Puntaje ajustado de CPU: ${result.CPU}</p>
-        <p>Puntaje ajustado de GPU: ${result.GPU}</p>
-        <p>Diferencia porcentual: ${result.diferencia}%</p>
-    `;
+                <p>Cuello de botella principal: ${result.cuelloDeBotella}</p>
+                <p>Puntaje ajustado de CPU: ${result.CPU}</p>
+                <p>Puntaje ajustado de GPU: ${result.GPU}</p>
+                <p>Diferencia porcentual: ${result.diferencia}%</p>
+            `;
 };
 
-Actualizar();
-
-
-/**
- * @method = Mostrar Productos del Carrito
- */
-
-const mostrar = () => {
-    const carritodiv = document.getElementsByClassName("carrito")[0];
-    const elementos = document.getElementById('total');
-
-    if (!carritodiv || !elementos) {
-        console.error('Elemento .carrito o elementos no encontrado');
-        return;
-    }
-
-    let total = 0;
-    let html = '';
-
-    carrito.forEach(item => {
-        const subtotal = item.precio * item.cantidad;
-        html += `<li class="producto"><span>${item.nombre} - $${item.precio.toFixed(2)} x ${item.cantidad} = $${subtotal.toFixed(2)}</span></li>`;
-        total += subtotal;
-    });
-    carritodiv.innerHTML = '<ul>${html}</ul>'
-    elementos.textContent = total.toFixed(2);
-
-    /**
-     * @method = Vaciar Productos del Carrito
-     */
-
-    const deshacerCompra = () => {
-        localStorage.removeItem('carrito');
-        carrito = [];
-        mostrar();
-        alert("Se ha vaciado el carrito.");
-    };
-
-    /**
-     * @method = Comprar Productos del Carrito
-     */
-
-    const comprado = () => {
-        localStorage.removeItem('carrito');
-        carrito = [];
-        mostrar();
-        alert("Los productos se compraron correctamente.");
-    };
-};
-    mostrar();
+    Boton();

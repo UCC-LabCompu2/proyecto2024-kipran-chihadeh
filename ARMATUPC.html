@@ -141,9 +141,11 @@
 
     <section id="Calculo">
         <div class="container">
-            <button id="calcular" onclick="Actualizar()">Calcular Consumo y Precio final</button>
-            <h2>Precio total: $ <span id="total">0</span></h2>
+            <button id="calcular" onclick="actualizar()">Calcular Consumo y Precio final</button>
+            <h2>Precio total: $<canvas id="myCanvas" width="400" height="100"></canvas> </h2>
             <h2>Consumo total [W]: <span id="consumo">0</span></h2>
+
+
         </div>
     </section>
 </section>
@@ -152,6 +154,7 @@
         <p>&copy; Universidad Católica de Córdoba</p>
     </div>
 </footer>
+
 <script src="MisfuncionesJS.js"></script>
 </body>
 </html>
