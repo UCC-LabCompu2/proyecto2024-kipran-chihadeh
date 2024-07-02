@@ -182,4 +182,4 @@ const comprado = () => {
     mostrar();
     alert("Los productos se compraron correctamente.");
 };
-mostrar();
+
